@@ -1,0 +1,60 @@
+{
+  "name": "PC/GEOS GOC",
+  "scopeName": "source.geos.goc",
+  "patterns": [
+    {
+      "name": "comment.block.geos",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "comment.line.double-slash.geos",
+      "match": "//.*$"
+    },
+    {
+      "name": "string.quoted.double.geos",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.geos",
+          "match": "\\\\.|\"\""
+        }
+      ],
+      "applyEndPatternLast": true
+    },
+    {
+      "name": "string.quoted.single.geos",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.geos",
+          "match": "\\\\.|''"
+        }
+      ],
+      "applyEndPatternLast": true
+    },
+    {
+      "name": "meta.embedded.block.assembly.geos",
+      "begin": "\\b(?:__asm|asm)\\s*\\{",
+      "end": "\\}",
+      "patterns": [
+        {
+          "include": "source.geos.esp"
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.goc",
+      "match": "@(?:class|endc|object|start|end|method|message|vardata|instance|default|extern|import|export|call|send|callsuper|dispatch|record|reloc|visMoniker|chunk|gstring|alias|prototype|uses|reserveMessages|optimize|noreloc|subscribe)\\b"
+    },
+    {
+      "name": "constant.other.symbol.geos",
+      "match": "\\b(?:MSG|METHOD|ATTR|HINT|FID|MANUFACTURER_ID|C|CLASSF|GF|HF|VDF|MF)_[A-Z0-9_]+\\b"
+    },
+    {
+      "include": "source.c"
+    }
+  ]
+}

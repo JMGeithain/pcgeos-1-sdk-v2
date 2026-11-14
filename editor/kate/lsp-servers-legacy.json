@@ -1,0 +1,74 @@
+{
+  "servers": {
+    "geos-esp": {
+      "highlightingModeRegex": "^PC/GEOS ESP$",
+      "command": [
+        "/absolute/perl",
+        "/absolute/sdk/tools/lsp/server.pl",
+        "--sdk-root",
+        "/absolute/sdk"
+      ],
+      "rootIndicationFileNames": [
+        "project.json",
+        "sdk.pl",
+        ".git"
+      ]
+    },
+    "geos-nasm": {
+      "highlightingModeRegex": "^PC/GEOS NASM$",
+      "command": [
+        "/absolute/perl",
+        "/absolute/sdk/tools/lsp/server.pl",
+        "--sdk-root",
+        "/absolute/sdk"
+      ],
+      "rootIndicationFileNames": [
+        "project.json",
+        "sdk.pl",
+        ".git"
+      ]
+    },
+    "geos-gp": {
+      "highlightingModeRegex": "^PC/GEOS GP$",
+      "command": [
+        "/absolute/perl",
+        "/absolute/sdk/tools/lsp/server.pl",
+        "--sdk-root",
+        "/absolute/sdk"
+      ],
+      "rootIndicationFileNames": [
+        "project.json",
+        "sdk.pl",
+        ".git"
+      ]
+    },
+    "geos-ui": {
+      "highlightingModeRegex": "^PC/GEOS UI$",
+      "command": [
+        "/absolute/perl",
+        "/absolute/sdk/tools/lsp/server.pl",
+        "--sdk-root",
+        "/absolute/sdk"
+      ],
+      "rootIndicationFileNames": [
+        "project.json",
+        "sdk.pl",
+        ".git"
+      ]
+    },
+    "geos-goc": {
+      "highlightingModeRegex": "^PC/GEOS GOC$",
+      "command": [
+        "/absolute/perl",
+        "/absolute/sdk/tools/lsp/server.pl",
+        "--sdk-root",
+        "/absolute/sdk"
+      ],
+      "rootIndicationFileNames": [
+        "project.json",
+        "sdk.pl",
+        ".git"
+      ]
+    }
+  }
+}

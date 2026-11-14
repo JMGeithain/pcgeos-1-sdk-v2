@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "name": "g1mathc",
+  "kind": "library",
+  "import_free": true,
+  "cpu": "8086",
+  "gp": "math.gp",
+  "sources": [{"path": "checksum.c", "language": "c"}],
+  "expected_export_count": 1
+}

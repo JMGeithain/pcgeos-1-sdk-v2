@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: MIT -->
+<language name="PC/GEOS ESP" section="Assembler" extensions="*.esp;*.gasm;*.def;*.asm" version="1" kateversion="5.0" author="PC/GEOS SDK contributors" license="MIT" mimetype="text/x-pcgeos-esp" priority="0">
+  <highlighting>
+    <list name="Directives">
+      <item>proc</item>
+      <item>endp</item>
+      <item>method</item>
+      <item>endm</item>
+      <item>class</item>
+      <item>endc</item>
+      <item>segment</item>
+      <item>ends</item>
+      <item>struct</item>
+      <item>record</item>
+      <item>union</item>
+      <item>enum</item>
+      <item>etype</item>
+      <item>typedef</item>
+      <item>end</item>
+      <item>public</item>
+      <item>extern</item>
+      <item>global</item>
+      <item>include</item>
+      <item>incbin</item>
+      <item>equ</item>
+      <item>macro</item>
+      <item>local</item>
+      <item>exitm</item>
+      <item>rept</item>
+      <item>irp</item>
+      <item>irpc</item>
+      <item>if</item>
+      <item>ifdef</item>
+      <item>ifndef</item>
+      <item>ife</item>
+      <item>ifidn</item>
+      <item>ifdif</item>
+      <item>else</item>
+      <item>elseif</item>
+      <item>endif</item>
+      <item>assert</item>
+      <item>uses</item>
+      <item>enter</item>
+      <item>leave</item>
+      <item>resource</item>
+      <item>lmem</item>
+      <item>chunk</item>
+      <item>vardata</item>
+      <item>message</item>
+      <item>static</item>
+      <item>super</item>
+      <item>callmod</item>
+      <item>db</item>
+      <item>dw</item>
+      <item>dd</item>
+      <item>byte</item>
+      <item>word</item>
+      <item>dword</item>
+      <item>fptr</item>
+      <item>sptr</item>
+      <item>nptr</item>
+      <item>lptr</item>
+      <item>optr</item>
+      <item>handle</item>
+      <item>offset</item>
+      <item>mask</item>
+      <item>length</item>
+      <item>size</item>
+      <item>type</item>
+      <item>dup</item>
+      <item>align</item>
+      <item>even</item>
+      <item>org</item>
+      <item>assume</item>
+      <item>group</item>
+      <item>near</item>
+      <item>far</item>
+    </list>
+    <list name="Instructions">
+      <item>aaa</item>
+      <item>aad</item>
+      <item>aam</item>
+      <item>aas</item>
+      <item>adc</item>
+      <item>add</item>
+      <item>and</item>
+      <item>call</item>
+      <item>cbw</item>
+      <item>clc</item>
+      <item>cld</item>
+      <item>cli</item>
+      <item>cmc</item>
+      <item>cmp</item>
+      <item>cmpsb</item>
+      <item>cmpsw</item>
+      <item>cwd</item>
+      <item>daa</item>
+      <item>das</item>
+      <item>dec</item>
+      <item>div</item>
+      <item>esc</item>
+      <item>hlt</item>
+      <item>idiv</item>
+      <item>imul</item>
+      <item>in</item>
+      <item>inc</item>
+      <item>int</item>
+      <item>into</item>
+      <item>iret</item>
+      <item>ja</item>
+      <item>jae</item>
+      <item>jb</item>
+      <item>jbe</item>
+      <item>jc</item>
+      <item>jcxz</item>
+      <item>je</item>
+      <item>jg</item>
+      <item>jge</item>
+      <item>jl</item>
+      <item>jle</item>
+      <item>jmp</item>
+      <item>jna</item>
+      <item>jnae</item>
+      <item>jnb</item>
+      <item>jnbe</item>
+      <item>jnc</item>
+      <item>jne</item>
+      <item>jng</item>
+      <item>jnge</item>
+      <item>jnl</item>
+      <item>jnle</item>
+      <item>jno</item>
+      <item>jnp</item>
+      <item>jns</item>
+      <item>jnz</item>
+      <item>jo</item>
+      <item>jp</item>
+      <item>jpe</item>
+      <item>jpo</item>
+      <item>js</item>
+      <item>jz</item>
+      <item>lahf</item>
+      <item>lds</item>
+      <item>lea</item>
+      <item>les</item>
+      <item>lodsb</item>
+      <item>lodsw</item>
+      <item>loop</item>
+      <item>loope</item>
+      <item>loopne</item>
+      <item>loopnz</item>
+      <item>loopz</item>
+      <item>mov</item>
+      <item>movsb</item>
+      <item>movsw</item>
+      <item>mul</item>
+      <item>neg</item>
+      <item>nop</item>
+      <item>not</item>
+      <item>or</item>
+      <item>out</item>
+      <item>pop</item>
+      <item>popf</item>
+      <item>push</item>
+      <item>pushf</item>
+      <item>rcl</item>
+      <item>rcr</item>
+      <item>rep</item>
+      <item>repe</item>
+      <item>repne</item>
+      <item>repnz</item>
+      <item>repz</item>
+      <item>ret</item>
+      <item>retn</item>
+      <item>retf</item>
+      <item>rol</item>
+      <item>ror</item>
+      <item>sahf</item>
+      <item>sal</item>
+      <item>sar</item>
+      <item>sbb</item>
+      <item>scasb</item>
+      <item>scasw</item>
+      <item>shl</item>
+      <item>shr</item>
+      <item>stc</item>
+      <item>std</item>
+      <item>sti</item>
+      <item>stosb</item>
+      <item>stosw</item>
+      <item>sub</item>
+      <item>test</item>
+      <item>wait</item>
+      <item>xchg</item>
+      <item>xlat</item>
+      <item>xor</item>
+    </list>
+    <list name="Registers">
+      <item>ax</item>
+      <item>bx</item>
+      <item>cx</item>
+      <item>dx</item>
+      <item>si</item>
+      <item>di</item>
+      <item>bp</item>
+      <item>sp</item>
+      <item>al</item>
+      <item>ah</item>
+      <item>bl</item>
+      <item>bh</item>
+      <item>cl</item>
+      <item>ch</item>
+      <item>dl</item>
+      <item>dh</item>
+      <item>cs</item>
+      <item>ds</item>
+      <item>es</item>
+      <item>ss</item>
+      <item>ip</item>
+      <item>flags</item>
+    </list>
+    <contexts>
+      <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+        <DetectChar char=";" attribute="Comment" context="Comment" />
+        <DetectChar char="&quot;" attribute="String" context="String" />
+        <DetectChar char="'" attribute="String" context="Char" />
+        <RegExpr String="\.[0-9][A-Za-z0-9_]*" attribute="Directive" context="#stay" />
+        <keyword String="Directives" attribute="Directive" context="#stay" />
+        <keyword String="Instructions" attribute="Instruction" context="#stay" />
+        <keyword String="Registers" attribute="Register" context="#stay" />
+        <RegExpr String="\bE12_[A-Za-z0-9_]+\b" attribute="API Symbol" context="#stay" />
+        <RegExpr String="(?i)\b(?:0x[0-9a-f]+|[0-9][0-9a-f]*h|[01]+b|[0-9]+)\b" attribute="Number" context="#stay" />
+      </context>
+      <context name="Comment" attribute="Comment" lineEndContext="#pop" />
+      <context name="String" attribute="String" lineEndContext="#pop">
+        <RegExpr String="\\." attribute="Escape" context="#stay" />
+        <DetectChar char="&quot;" attribute="String" context="#pop" />
+      </context>
+      <context name="Char" attribute="String" lineEndContext="#pop">
+        <RegExpr String="\\." attribute="Escape" context="#stay" />
+        <DetectChar char="'" attribute="String" context="#pop" />
+      </context>
+    </contexts>
+    <itemDatas>
+      <itemData name="Normal Text" defStyleNum="dsNormal" />
+      <itemData name="Comment" defStyleNum="dsComment" />
+      <itemData name="String" defStyleNum="dsString" />
+      <itemData name="Escape" defStyleNum="dsSpecialChar" />
+      <itemData name="Directive" defStyleNum="dsPreprocessor" />
+      <itemData name="Instruction" defStyleNum="dsKeyword" />
+      <itemData name="Register" defStyleNum="dsDataType" />
+      <itemData name="API Symbol" defStyleNum="dsFunction" />
+      <itemData name="Number" defStyleNum="dsDecVal" />
+    </itemDatas>
+  </highlighting>
+  <general>
+    <keywords casesensitive="false" />
+    <comments>
+      <comment name="singleLine" start=";" />
+    </comments>
+  </general>
+</language>

@@ -1,0 +1,28 @@
+{
+  "8086 flat routine": {
+    "prefix": "g1-nasm-routine",
+    "description": "An original NASM far routine; no OS ABI is implied",
+    "body": [
+      "BITS 16",
+      "CPU 8086",
+      "ORG 0",
+      "",
+      "${1:Routine}:",
+      "    push bp",
+      "    mov bp, sp",
+      "    ${2:; implement the documented register/stack contract}",
+      "    pop bp",
+      "    retf",
+      "$0"
+    ]
+  },
+  "NASM macro": {
+    "prefix": "g1-nasm-macro",
+    "description": "A NASM macro, distinct from Esp syntax",
+    "body": [
+      "%macro ${1:MacroName} ${2:0}",
+      "    $0",
+      "%endmacro"
+    ]
+  }
+}

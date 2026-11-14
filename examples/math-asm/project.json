@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "name": "g1math",
+  "kind": "library",
+  "import_free": true,
+  "cpu": "8086",
+  "gp": "math.gp",
+  "sources": [
+    {
+      "path": "math.asm",
+      "language": "esp"
+    }
+  ],
+  "expected_export_count": 1,
+  "interface": "own-register-ABI; AX and BX inputs, AX result",
+  "native_runtime_tested": false
+}

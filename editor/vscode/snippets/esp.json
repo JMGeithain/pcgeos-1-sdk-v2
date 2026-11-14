@@ -1,0 +1,35 @@
+{
+  "Near procedure with contract": {
+    "prefix": "geos-proc",
+    "description": "ESP near procedure. Fill in the ABI contract before use.",
+    "body": [
+      "; Inputs: ${2:document registers / stack}",
+      "; Outputs: ${3:document result}",
+      "; Preserves: ${4:document preserved registers}",
+      "${1:RoutineName} proc near",
+      "\t$0",
+      "\tret",
+      "${1} endp"
+    ]
+  },
+  "Method structure": {
+    "prefix": "geos-method",
+    "description": "ESP structure only; verify class, message and ABI against your target profile.",
+    "body": [
+      "${1:Handler} method ${2:ApplicationProcessClass}, ${3:MSG_USER_ACTION}",
+      "\t; Verify this message contract in your target profile.",
+      "\t$0",
+      "\tret",
+      "${1} endm"
+    ]
+  },
+  "Class structure": {
+    "prefix": "geos-class",
+    "description": "ESP class declaration structure; not a complete application.",
+    "body": [
+      "${1:ApplicationProcessClass} class ${2:BaseProcessClass}",
+      "\t$0",
+      "${1} endc"
+    ]
+  }
+}

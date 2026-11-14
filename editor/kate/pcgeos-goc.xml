@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: MIT -->
+<language name="PC/GEOS GOC" section="Sources" extensions="*.goc;*.goh" version="1" kateversion="5.0" author="PC/GEOS SDK contributors" license="MIT" mimetype="text/x-pcgeos-goc" priority="0">
+  <highlighting>
+    <list name="Directives">
+      <item>class</item>
+      <item>endclass</item>
+      <item>object</item>
+      <item>endobj</item>
+      <item>method</item>
+      <item>message</item>
+      <item>prototype</item>
+      <item>instance</item>
+      <item>vardata</item>
+      <item>reserve</item>
+      <item>uses</item>
+      <item>optimize</item>
+      <item>call</item>
+      <item>send</item>
+      <item>callsuper</item>
+      <item>dispatch</item>
+      <item>import</item>
+      <item>export</item>
+      <item>resource</item>
+      <item>chunk</item>
+      <item>optr</item>
+      <item>process</item>
+    </list>
+    <contexts>
+      <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+        <Detect2Chars char="/" char1="/" attribute="Comment" context="Comment" />
+        <DetectChar char="&quot;" attribute="String" context="String" />
+        <DetectChar char="'" attribute="String" context="Char" />
+        <RegExpr String="@[A-Za-z_][A-Za-z0-9_]*" attribute="Directive" context="#stay" />
+        <keyword String="Directives" attribute="Directive" context="#stay" />
+        <RegExpr String="\bE12_[A-Za-z0-9_]+\b" attribute="API Symbol" context="#stay" />
+        <RegExpr String="(?i)\b(?:0x[0-9a-f]+|[0-9][0-9a-f]*h|[01]+b|[0-9]+)\b" attribute="Number" context="#stay" />
+        <IncludeRules context="##C" />
+      </context>
+      <context name="Comment" attribute="Comment" lineEndContext="#pop" />
+      <context name="String" attribute="String" lineEndContext="#pop">
+        <RegExpr String="\\." attribute="Escape" context="#stay" />
+        <DetectChar char="&quot;" attribute="String" context="#pop" />
+      </context>
+      <context name="Char" attribute="String" lineEndContext="#pop">
+        <RegExpr String="\\." attribute="Escape" context="#stay" />
+        <DetectChar char="'" attribute="String" context="#pop" />
+      </context>
+    </contexts>
+    <itemDatas>
+      <itemData name="Normal Text" defStyleNum="dsNormal" />
+      <itemData name="Comment" defStyleNum="dsComment" />
+      <itemData name="String" defStyleNum="dsString" />
+      <itemData name="Escape" defStyleNum="dsSpecialChar" />
+      <itemData name="Directive" defStyleNum="dsPreprocessor" />
+      <itemData name="Instruction" defStyleNum="dsKeyword" />
+      <itemData name="Register" defStyleNum="dsDataType" />
+      <itemData name="API Symbol" defStyleNum="dsFunction" />
+      <itemData name="Number" defStyleNum="dsDecVal" />
+    </itemDatas>
+  </highlighting>
+  <general>
+    <keywords casesensitive="false" />
+    <comments>
+      <comment name="singleLine" start="//" />
+    </comments>
+  </general>
+</language>

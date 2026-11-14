@@ -1,0 +1,21 @@
+{
+  "Named geode": {
+    "prefix": "geos-gp-name",
+    "description": "Names only; token must be unique for your application.",
+    "body": [
+      "name ${1:sample}.app",
+      "longname \"${2:Sample application}\"",
+      "tokenchars \"${3:DEMO}\"",
+      "tokenid ${4:0}",
+      "$0"
+    ]
+  },
+  "Resource declaration": {
+    "prefix": "geos-gp-resource",
+    "description": "Declare a resource; choose flags that match the actual resource.",
+    "body": [
+      "resource ${1:Interface} ${2:ui-object}",
+      "$0"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "PC/GEOS Glue parameters",
+  "scopeName": "source.geos.gp",
+  "patterns": [
+    {
+      "name": "comment.line.number-sign.gp",
+      "match": "#.*$"
+    },
+    {
+      "name": "string.quoted.double.geos",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.geos",
+          "match": "\\\\.|\"\""
+        }
+      ],
+      "applyEndPatternLast": true
+    },
+    {
+      "name": "string.quoted.single.geos",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.geos",
+          "match": "\\\\.|''"
+        }
+      ],
+      "applyEndPatternLast": true
+    },
+    {
+      "name": "constant.numeric.geos",
+      "match": "(?i:\\b(?:0x[0-9a-f]+|[0-9][0-9a-f]*h|[01]+b|[0-7]+[oq]|[0-9]+d?|[0-9]+\\.[0-9]+)\\b)"
+    },
+    {
+      "name": "keyword.control.directive.gp",
+      "match": "(?i:^\\s*(?:name|longname|type|class|appobj|tokenchars|tokenid|library|driver|resource|export|publish|entry|heapspace|stack|nosort|platform|protocol|usernotes|copyright|exempt|ship|incminor|ifdef|ifndef|else|endif)\\b)"
+    },
+    {
+      "name": "storage.modifier.resource.gp",
+      "match": "(?i:\\b(?:appl|process|single|library|driver|system|ui-object|object|lmem|data|code|fixed|shared|read-only|discardable|discard-only|preload|swap-only|conforming|no-discard)\\b)"
+    }
+  ]
+}

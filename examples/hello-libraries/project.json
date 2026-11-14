@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "g1probe",
+  "kind": "application",
+  "backend": "ensemble12",
+  "cpu": "8086",
+  "long_name": "GEOS 1 Library Probe",
+  "token": "G1LP",
+  "sources": [
+    {
+      "language": "nasm",
+      "path": "hello.nasm"
+    }
+  ],
+  "view": {
+    "width": 320,
+    "height": 180
+  },
+  "native_runtime_tested": false,
+  "imports": [
+    {
+      "name": "g1math",
+      "protocol": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "g1mathc",
+      "protocol": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "g1mixed",
+      "protocol": [
+        1,
+        0
+      ]
+    }
+  ]
+}

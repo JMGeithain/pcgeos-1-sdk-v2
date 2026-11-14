@@ -1,0 +1,21 @@
+{
+  "GOC method structure": {
+    "prefix": "geos-goc-method",
+    "description": "GOC language structure only; not a promise that GOC objects or this API are available on 1.x.",
+    "body": [
+      "@method ${1:ApplicationProcessClass}, ${2:MSG_USER_ACTION} {",
+      "\t/* Verify target-specific ABI and message definitions. */",
+      "\t$0",
+      "}"
+    ]
+  },
+  "GOC resource structure": {
+    "prefix": "geos-goc-resource",
+    "description": "GOC resource delimiters; use only with a matching compiler and target profile.",
+    "body": [
+      "@start ${1:Interface};",
+      "$0",
+      "@end ${1};"
+    ]
+  }
+}

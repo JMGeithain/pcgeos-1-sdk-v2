@@ -1,0 +1,63 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PC/GEOS: Doctor",
+      "type": "process",
+      "command": "${config:pcgeos1.perlExecutable}",
+      "args": [
+        "${workspaceFolder}/sdk.pl",
+        "doctor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "PC/GEOS: Check",
+      "type": "process",
+      "command": "${config:pcgeos1.perlExecutable}",
+      "args": [
+        "${workspaceFolder}/sdk.pl",
+        "check"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "PC/GEOS: Test",
+      "type": "process",
+      "command": "${config:pcgeos1.perlExecutable}",
+      "args": [
+        "${workspaceFolder}/sdk.pl",
+        "test"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "PC/GEOS: Build",
+      "type": "process",
+      "command": "${config:pcgeos1.perlExecutable}",
+      "args": [
+        "${workspaceFolder}/sdk.pl",
+        "build",
+        "--project",
+        "${config:pcgeos1.project}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "PC/GEOS NASM flat assembly",
+  "scopeName": "source.geos.nasm",
+  "patterns": [
+    {
+      "name": "comment.line.semicolon.nasm",
+      "match": ";.*$"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "name": "keyword.control.preprocessor.nasm",
+      "match": "^\\s*%(?:define|xdefine|assign|include|macro|imacro|endmacro|rep|endrep|if|ifdef|ifndef|elif|else|endif|error|warning|undef|push|pop|local|rotate)\\b"
+    },
+    {
+      "name": "keyword.control.directive.nasm",
+      "match": "(?i:\\b(?:bits|cpu|org|section|segment|global|extern|align|alignb|times|equ|db|dw|dd|dq|dt|resb|resw|resd|resq|rest|incbin|struc|endstruc)\\b)"
+    },
+    {
+      "name": "entity.name.label.nasm",
+      "match": "^\\s*[A-Za-z_.$?@][\\w.$?@]*:"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#instructions"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.geos",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.geos",
+              "match": "\\\\.|\"\""
+            }
+          ],
+          "applyEndPatternLast": true
+        },
+        {
+          "name": "string.quoted.single.geos",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.geos",
+              "match": "\\\\.|''"
+            }
+          ],
+          "applyEndPatternLast": true
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.geos",
+          "match": "(?i:\\b(?:0x[0-9a-f]+|[0-9][0-9a-f]*h|[01]+b|[0-7]+[oq]|[0-9]+d?|[0-9]+\\.[0-9]+)\\b)"
+        }
+      ]
+    },
+    "instructions": {
+      "patterns": [
+        {
+          "name": "keyword.control.instruction.x86",
+          "match": "(?i:\\b(?:aaa|aad|aam|aas|adc|add|and|call|cbw|clc|cld|cli|cmc|cmp|cmpsb|cmpsw|cwd|daa|das|dec|div|esc|hlt|idiv|imul|in|inc|int|into|iret|ja|jae|jb|jbe|jc|jcxz|je|jg|jge|jl|jle|jmp|jna|jnae|jnb|jnbe|jnc|jne|jng|jnge|jnl|jnle|jno|jnp|jns|jnz|jo|jp|jpe|jpo|js|jz|lahf|lds|lea|les|lodsb|lodsw|loop|loope|loopne|loopnz|loopz|mov|movsb|movsw|mul|neg|nop|not|or|out|pop|popf|push|pushf|rcl|rcr|rep|repe|repne|repnz|repz|ret|retn|retf|rol|ror|sahf|sal|sar|sbb|scasb|scasw|shl|shr|stc|std|sti|stosb|stosw|sub|test|wait|xchg|xlat|xor)\\b)"
+        }
+      ]
+    }
+  }
+}

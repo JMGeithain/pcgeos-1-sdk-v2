@@ -1,0 +1,94 @@
+{
+  "servers": {
+    "geos-esp": {
+      "highlightingModeRegex": "^PC/GEOS ESP$",
+      "servers": {
+        "pcgeos1": {
+          "command": [
+            "/absolute/perl",
+            "/absolute/sdk/tools/lsp/server.pl",
+            "--sdk-root",
+            "/absolute/sdk"
+          ],
+          "rootIndicationFileNames": [
+            "project.json",
+            "sdk.pl",
+            ".git"
+          ]
+        }
+      }
+    },
+    "geos-nasm": {
+      "highlightingModeRegex": "^PC/GEOS NASM$",
+      "servers": {
+        "pcgeos1": {
+          "command": [
+            "/absolute/perl",
+            "/absolute/sdk/tools/lsp/server.pl",
+            "--sdk-root",
+            "/absolute/sdk"
+          ],
+          "rootIndicationFileNames": [
+            "project.json",
+            "sdk.pl",
+            ".git"
+          ]
+        }
+      }
+    },
+    "geos-gp": {
+      "highlightingModeRegex": "^PC/GEOS GP$",
+      "servers": {
+        "pcgeos1": {
+          "command": [
+            "/absolute/perl",
+            "/absolute/sdk/tools/lsp/server.pl",
+            "--sdk-root",
+            "/absolute/sdk"
+          ],
+          "rootIndicationFileNames": [
+            "project.json",
+            "sdk.pl",
+            ".git"
+          ]
+        }
+      }
+    },
+    "geos-ui": {
+      "highlightingModeRegex": "^PC/GEOS UI$",
+      "servers": {
+        "pcgeos1": {
+          "command": [
+            "/absolute/perl",
+            "/absolute/sdk/tools/lsp/server.pl",
+            "--sdk-root",
+            "/absolute/sdk"
+          ],
+          "rootIndicationFileNames": [
+            "project.json",
+            "sdk.pl",
+            ".git"
+          ]
+        }
+      }
+    },
+    "geos-goc": {
+      "highlightingModeRegex": "^PC/GEOS GOC$",
+      "servers": {
+        "pcgeos1": {
+          "command": [
+            "/absolute/perl",
+            "/absolute/sdk/tools/lsp/server.pl",
+            "--sdk-root",
+            "/absolute/sdk"
+          ],
+          "rootIndicationFileNames": [
+            "project.json",
+            "sdk.pl",
+            ".git"
+          ]
+        }
+      }
+    }
+  }
+}

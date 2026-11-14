@@ -1,0 +1,195 @@
+{
+  "name": "pcgeos1-language-support",
+  "displayName": "PC/GEOS Language Tools",
+  "description": "PC/GEOS syntax highlighting, API completion, hover references and bounded source checks through the SDK language server.",
+  "version": "0.2.0",
+  "publisher": "pcgeos1-community",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "PC/GEOS",
+    "GEOS",
+    "ESP",
+    "ESPIRE",
+    "UIC",
+    "GOC",
+    "8086",
+    "NASM"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "Syntax highlighting remains available; the Perl language server starts only in trusted workspaces."
+    },
+    "virtualWorkspaces": true
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "geos-esp",
+        "aliases": [
+          "PC/GEOS ESP",
+          "geos-esp"
+        ],
+        "extensions": [
+          ".asm",
+          ".esp",
+          ".gasm",
+          ".def"
+        ],
+        "configuration": "./language-configuration-esp.json"
+      },
+      {
+        "id": "geos-ui",
+        "aliases": [
+          "PC/GEOS ESPIRE/UIC",
+          "geos-ui"
+        ],
+        "extensions": [
+          ".ui",
+          ".uih"
+        ],
+        "configuration": "./language-configuration-ui.json"
+      },
+      {
+        "id": "geos-gp",
+        "aliases": [
+          "PC/GEOS Glue parameters",
+          "geos-gp"
+        ],
+        "extensions": [
+          ".gp"
+        ],
+        "configuration": "./language-configuration-gp.json"
+      },
+      {
+        "id": "geos-goc",
+        "aliases": [
+          "PC/GEOS GOC",
+          "geos-goc"
+        ],
+        "extensions": [
+          ".goc",
+          ".goh"
+        ],
+        "configuration": "./language-configuration-goc.json"
+      },
+      {
+        "id": "geos-nasm",
+        "aliases": [
+          "PC/GEOS NASM (flat binary)",
+          "geos-nasm"
+        ],
+        "extensions": [
+          ".nasm"
+        ],
+        "configuration": "./language-configuration-nasm.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "geos-esp",
+        "scopeName": "source.geos.esp",
+        "path": "./syntaxes/esp.tmLanguage.json"
+      },
+      {
+        "language": "geos-ui",
+        "scopeName": "source.geos.ui",
+        "path": "./syntaxes/uic.tmLanguage.json"
+      },
+      {
+        "language": "geos-gp",
+        "scopeName": "source.geos.gp",
+        "path": "./syntaxes/gp.tmLanguage.json"
+      },
+      {
+        "language": "geos-goc",
+        "scopeName": "source.geos.goc",
+        "path": "./syntaxes/goc.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.assembly.geos": "geos-esp"
+        }
+      },
+      {
+        "language": "geos-nasm",
+        "scopeName": "source.geos.nasm",
+        "path": "./syntaxes/nasm.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "geos-esp",
+        "path": "./snippets/esp.json"
+      },
+      {
+        "language": "geos-ui",
+        "path": "./snippets/ui.json"
+      },
+      {
+        "language": "geos-gp",
+        "path": "./snippets/gp.json"
+      },
+      {
+        "language": "geos-goc",
+        "path": "./snippets/goc.json"
+      },
+      {
+        "language": "geos-nasm",
+        "path": "./snippets/nasm.json"
+      }
+    ],
+    "configuration": {
+      "title": "PC/GEOS SDK tasks",
+      "properties": {
+        "pcgeos1.perlExecutable": {
+          "type": "string",
+          "default": "perl",
+          "description": "Perl 5.26+ executable used by the optional SDK task template; use an executable path, without command-line arguments."
+        },
+        "pcgeos1.project": {
+          "type": "string",
+          "default": "examples/math-asm",
+          "description": "Project path passed to the optional SDK task template."
+        },
+        "pcgeos1.sdkRoot": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to the SDK checkout (containing tools/lsp/server.pl); detected automatically when the SDK is a workspace root."
+        },
+        "pcgeos1.enableLanguageServer": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable local Perl API completion, hover and bounded checks in trusted SDK workspaces."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "pcgeos1.restartLanguageServer",
+        "title": "PC/GEOS: Restart Language Server"
+      },
+      {
+        "command": "pcgeos1.openApiReference",
+        "title": "PC/GEOS: Open Ensemble 1.2 API Reference"
+      }
+    ]
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:geos-esp",
+    "onLanguage:geos-nasm",
+    "onLanguage:geos-ui",
+    "onLanguage:geos-gp",
+    "onLanguage:geos-goc",
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onCommand:pcgeos1.restartLanguageServer",
+    "onCommand:pcgeos1.openApiReference"
+  ]
+}

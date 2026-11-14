@@ -1,0 +1,25 @@
+{
+  "pcgeos1.perlExecutable": "perl",
+  "pcgeos1.project": "examples/math-asm",
+  "files.associations": {
+    "*.asm": "geos-esp",
+    "*.def": "geos-esp",
+    "*.ui": "geos-ui",
+    "*.uih": "geos-ui",
+    "*.gp": "geos-gp",
+    "*.goc": "geos-goc",
+    "*.goh": "geos-goc"
+  },
+  "[geos-esp]": {
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false
+  },
+  "[geos-ui]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[geos-goc]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  }
+}

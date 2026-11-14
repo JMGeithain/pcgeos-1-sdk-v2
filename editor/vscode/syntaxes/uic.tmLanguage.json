@@ -1,0 +1,71 @@
+{
+  "name": "PC/GEOS ESPIRE/UIC",
+  "scopeName": "source.geos.ui",
+  "patterns": [
+    {
+      "name": "comment.block.geos",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "comment.line.double-slash.geos",
+      "match": "//.*$"
+    },
+    {
+      "name": "string.quoted.double.geos",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.geos",
+          "match": "\\\\.|\"\""
+        }
+      ],
+      "applyEndPatternLast": true
+    },
+    {
+      "name": "string.quoted.single.geos",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.geos",
+          "match": "\\\\.|''"
+        }
+      ],
+      "applyEndPatternLast": true
+    },
+    {
+      "name": "meta.preprocessor.geos",
+      "match": "^\\s*#\\s*(?:include|define|undef|if|ifdef|ifndef|elif|else|endif|error|pragma|line)\\b"
+    },
+    {
+      "name": "constant.other.symbol.geos",
+      "match": "\\b(?:MSG|METHOD|ATTR|HINT|FID|MANUFACTURER_ID|C|CLASSF|GF|HF|VDF|MF)_[A-Z0-9_]+\\b"
+    },
+    {
+      "name": "constant.numeric.geos",
+      "match": "(?i:\\b(?:0x[0-9a-f]+|[0-9][0-9a-f]*h|[01]+b|[0-7]+[oq]|[0-9]+d?|[0-9]+\\.[0-9]+)\\b)"
+    },
+    {
+      "name": "keyword.control.uic",
+      "match": "\\b(?:start|end|class|object|resource|visMoniker|list|gstring|chunk|data|structure|export|extern|include|specificUI|hints|children|output|process|link|activeList|gcnList|keyboardAccelerator)\\b"
+    },
+    {
+      "name": "entity.name.type.geos",
+      "match": "\\b(?:Gen|Vis|Meta)[A-Za-z0-9_]*(?:Class)?\\b"
+    },
+    {
+      "name": "entity.name.object.uic",
+      "match": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*=\\s*[A-Za-z_])"
+    },
+    {
+      "name": "keyword.operator.assignment.geos",
+      "match": "[=|&+*/<>-]"
+    },
+    {
+      "name": "punctuation.terminator.statement.geos",
+      "match": ";"
+    }
+  ]
+}
