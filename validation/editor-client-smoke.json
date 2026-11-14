@@ -1,0 +1,23 @@
+{
+  "schema": "pcgeos1-editor-client-headless-smoke-v1",
+  "passed": true,
+  "node_version": "v24.22.1",
+  "perl": "perl",
+  "actual_perl_lsp_subprocess": true,
+  "vscode_api_mocked": true,
+  "vscode_gui_tested": false,
+  "subprocesses_started": 4,
+  "all_children_stopped": true,
+  "checks": [
+    "untrusted workspace launches no process",
+    "completion crosses real stdio server with fragmented frames",
+    "hover preserves UTF-16 positions and untrusted Markdown",
+    "signature help converts the real server register contract without C wrappers",
+    "API and local definitions resolve actual files; symbols convert",
+    "bounded diagnostics map severities and UTF-16 ranges; ignore comments/strings",
+    "full-text changes and document closure synchronize",
+    "restart and disposal perform shutdown/exit with no child leaks",
+    "malformed response terminates actual Perl child",
+    "disposal during initialize leaves no process or document notifications"
+  ]
+}

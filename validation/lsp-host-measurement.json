@@ -1,0 +1,19 @@
+{
+   "completion_count" : 16,
+   "completion_ms" : 247.983,
+   "diagnostic_count" : 1,
+   "diagnostics_ms" : 128.474,
+   "host" : "linux",
+   "limitations" : [
+      "One machine and run; not a comparative performance benchmark",
+      "Not GEOS RAM consumption, native loader evidence or 8086 timing"
+   ],
+   "measurement_runs" : 1,
+   "perl" : "v5.40.1",
+   "process_peak_rss" : 37104,
+   "process_peak_rss_unit" : "KiB (Linux)",
+   "schema" : "pcgeos1-lsp-host-measurement-v2",
+   "scope" : "Host language services, in-process; excludes IDE and stdio transport",
+   "source_lines" : 10002,
+   "source_utf8_bytes" : 218934
+}

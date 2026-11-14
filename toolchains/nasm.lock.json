@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "upstream": "https://www.nasm.us/",
+  "version": "3.02",
+  "license": "BSD-2-Clause",
+  "archive": {
+    "url": "https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02.tar.xz",
+    "bytes": 1531636,
+    "sha256": "87336eba53b4acfe917424ab5d500d2b0054d9f5148d35c2273ccf2cfb712f0d"
+  },
+  "archive_root": "nasm-3.02",
+  "tested_host": "linux-x86_64",
+  "prerequisites": ["Perl 5.26+", "POSIX shell", "C compiler", "GNU make", "curl", "xz"],
+  "build_targets": ["nasm", "ndisasm"],
+  "scope": "Assembles flat 8086 resources for the explicitly profiled Ensemble 1.2 writer. Does not replace Esp for GEOS object assembly. No binary is bundled in the SDK repository."
+}

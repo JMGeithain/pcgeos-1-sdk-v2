@@ -1,0 +1,13 @@
+{
+   "command" : "perl sdk.pl test",
+   "compiler_optional_test_enabled" : true,
+   "host" : "Linux x86-64",
+   "native_runtime_tested_by_this_command" : false,
+   "node_client_test_enabled" : true,
+   "passed" : true,
+   "perl" : "v5.40.1",
+   "schema" : "pcgeos1-host-test-result-v2",
+   "sdk" : "0.2.0",
+   "test_assertions" : 719,
+   "test_files" : 12
+}

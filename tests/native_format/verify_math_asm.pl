@@ -1,0 +1,2 @@
+#!/usr/bin/env perl
+use strict;use warnings;use FindBin;use lib "$FindBin::Bin/../../tools/lib","$FindBin::Bin/../algorithms";use Getopt::Long qw(GetOptions);use SampleCheck qw(verify_asm write_report);my($geode,$output);GetOptions('geode=s'=>\$geode,'output=s'=>\$output)or die 'Invalid options';die 'Usage: perl verify_math_asm.pl --geode FILE [--output FILE]' unless defined $geode;eval{write_report(verify_asm($geode),$output);1}or do{print STDERR $@;exit 1};

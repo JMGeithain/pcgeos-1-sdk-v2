@@ -1,0 +1,18 @@
+{
+   "add_cases" : 1064,
+   "code_hex" : "f8cb03c3cb",
+   "engine" : "bounded-perl-8086",
+   "entry_cases" : 24,
+   "example_opcodes_8086_whitelisted" : true,
+   "geos_runtime_tested" : false,
+   "input" : "pcgeos1-sdk/build/g1math/g1math.geo",
+   "input_sha256" : "412f1bdd923f5889f051fe7e31df88007b366a02fc41ec87fc75a67fa0dbc302",
+   "limitations" : [
+      "Only audited sample opcodes interpreted; not a general emulator",
+      "No CPU timing, physical hardware, DOS or GEOS loader/API validation"
+   ],
+   "native_loader_tested" : false,
+   "passed" : true,
+   "schema" : "pcgeos1-math-asm-emitted-code-perl-v1",
+   "total_cases" : 1088
+}

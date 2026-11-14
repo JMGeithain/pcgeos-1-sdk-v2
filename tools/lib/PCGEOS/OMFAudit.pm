@@ -1,0 +1,24 @@
+package PCGEOS::OMFAudit;
+use strict;
+use warnings;
+use Exporter 'import';
+use Digest::SHA qw(sha256_hex);
+our @EXPORT_OK=qw(records omf_index omf_name inspect);
+sub records {my $raw=shift;my (@out,$at);$at=0;while ($at<length($raw)) {die "Truncated OMF record header\n" if $at+3>length($raw);my ($kind,$len)=unpack('Cv',substr($raw,$at,3));my $end=$at+3+$len;die "Truncated OMF record body\n" if $len<1||$end>length($raw);my $sum=0;$sum+=$_ for unpack('C*',substr($raw,$at,$end-$at));die sprintf("Invalid OMF checksum at %#x\n",$at) if $sum&255;push @out,[$kind,substr($raw,$at+3,$len-1)];$at=$end}return \@out}
+sub omf_index {my ($data,$at)=@_;die "Truncated OMF index\n" if $at>=length($data);my $f=ord(substr($data,$at,1));if ($f&128) {die "Truncated two-byte OMF index\n" if $at+1>=length($data);return ((($f&127)<<8)|ord(substr($data,$at+1,1)),$at+2)}return ($f,$at+1)}
+sub omf_name {my ($data,$at)=@_;die "Truncated OMF name\n" if $at>=length($data);my $end=$at+1+ord(substr($data,$at,1));die "OMF name exceeds its record\n" if $end>length($data);my $name=substr($data,$at+1,$end-$at-1);die "OMF name must be ASCII\n" if $name=~/[^\x00-\x7f]/;return ($name,$end)}
+sub inspect {
+    my ($raw,$class)=@_;$class//='CODE';my $parsed=records($raw);die "Expected one THEADR..MODEND object module\n" unless @$parsed&&$parsed->[0][0]==0x80&&$parsed->[-1][0]==0x8a;for my $i (0..$#$parsed-1) {die "Multiple object modules are not accepted\n" if $parsed->[$i][0]==0x8a}
+    my @names=('');my @segments=(undef);my (@public,@ledatas);my %forbidden=(0x8c=>'external references',0x9c=>'linker fixups',0xa2=>'iterated data',0xb0=>'communal data',0xb4=>'local external references',0xb6=>'local publics',0xb8=>'local communal data',0xbc=>'COMDAT externals',0xc2=>'COMDAT segments');my %allowed=map {$_=>1} (0x80,0x88,0x8a,0x90,0x96,0x98,0x9a,0xa0);
+    for my $record (@$parsed) {my ($kind,$data)=@$record;die "Restricted algorithm audit rejects $forbidden{$kind}\n" if $forbidden{$kind};die sprintf("Restricted algorithm audit rejects record %#04x\n",$kind) unless $allowed{$kind};
+        if ($kind==0x96) {my $at=0;while ($at<length($data)) {my $value;($value,$at)=omf_name($data,$at);push @names,$value}}
+        elsif ($kind==0x98) {die "Truncated SEGDEF\n" if length($data)<4;my $attr=ord(substr($data,0,1));die "USE32 segment is not an 8086 segment\n" if $attr&1;die "Absolute segments require a real linker\n" unless $attr>>5;my $len=unpack('v',substr($data,1,2));die "64-KiB BIG segment is outside this bounded example profile\n" if $attr&2;my ($sid,$at)=omf_index($data,3);my ($cid,$overlay);($cid,$at)=omf_index($data,$at);($overlay,$at)=omf_index($data,$at);die "Invalid SEGDEF name index\n" if $at!=length($data)||$sid>=@names||$cid>=@names||$overlay>=@names;push @segments,{index=>scalar(@segments),name=>$names[$sid],class=>$names[$cid],bytes=>$len}}
+        elsif ($kind==0xa0) {my ($seg,$at)=omf_index($data,0);die "Truncated LEDATA offset\n" if $at+2>length($data);push @ledatas,[$seg,unpack('v',substr($data,$at,2)),substr($data,$at+2)]}
+        elsif ($kind==0x90) {my ($group,$at)=omf_index($data,0);my $seg;($seg,$at)=omf_index($data,$at);die "Absolute public symbols require a real linker\n" unless $seg;while ($at<length($data)) {my $symbol;($symbol,$at)=omf_name($data,$at);die "Truncated public symbol offset\n" if $at+2>length($data);my $off=unpack('v',substr($data,$at,2));my $ti;($ti,$at)=omf_index($data,$at+2);push @public,{name=>$symbol,segment=>$seg,offset=>$off}}}
+    }
+    my @code=grep {$_->{class} eq $class&&$_->{bytes}} @segments[1..$#segments];my @other=grep {$_->{class} ne $class&&$_->{bytes}} @segments[1..$#segments];die "Expected exactly one nonempty code segment and empty data segments\n" unless @code==1&&!@other;my $selected=$code[0];my $image="\0" x $selected->{bytes};my $coverage="\0" x length($image);
+    for my $row (@ledatas) {my ($seg,$off,$data)=@$row;die "LEDATA refers to an undefined segment\n" unless $seg>0&&$seg<@segments;die "Data bytes outside the selected code segment\n" if length($data)&&$seg!=$selected->{index};my $end=$off+length($data);die "LEDATA overlaps or exceeds code bounds\n" if $end>length($image)||substr($coverage,$off,length($data))=~/[^\0]/;substr($image,$off,length($data))=$data;substr($coverage,$off,length($data))="\1" x length($data)}
+    die "Uninitialized holes in the code segment\n" if $coverage=~/\0/;for my $item (@public) {die "Public symbol is not within the selected code\n" if $item->{segment}!=$selected->{index}||$item->{offset}>=length($image)}
+    return ({object_sha256=>sha256_hex($raw),code_sha256=>sha256_hex($image),segments=>[@segments[1..$#segments]],publics=>\@public,code_segment=>$selected->{name},code_bytes=>length($image),external_references=>0,fixup_records=>0,scope=>'One scalar-only 16-bit OMF code segment; no GEOS loader or API validation'},$image);
+}
+1;

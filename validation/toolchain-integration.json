@@ -1,0 +1,49 @@
+{
+   "freegeos" : {
+      "binary_sha256" : {
+         "esp" : "1d0c5414fbd8ca50ef97864765a419f50c86b481e05a5a86056ac68f3394ded8",
+         "glue" : "2a207e31d4712be5a27b154de24cd92f35c4ed4a8b9199860109aebe9146d864"
+      },
+      "patch_sha256" : "aed8ffb46f27d3cc19acb5b027558d4c1d7b3ac9aa2ea1f981ee2164c74ad740",
+      "smoke_test" : {
+         "bytes" : 354,
+         "format_structurally_valid" : true,
+         "path" : "/workspace/scratch/bb7c50f3dc99/sdk-work/perl-bootstrap-check/freegeos/smoke/probe.geo",
+         "probe_8086_opcode_whitelist_passed" : true,
+         "runtime_tested" : false,
+         "scope" : "Actual Esp assembly and Glue -G 1 link; no OS APIs imported. Kernel protocol remains 0.0 pending a real 1.x runtime profile.",
+         "sha256" : "78139aa1855db5f41cfa6bf0630574d20463858551d3d1440f33203eed38955f"
+      },
+      "source_archive_sha256" : "d40b28a6d74e8279e0c349308d3e93b96b3ff6866bed5cb9601c88ac0051c123"
+   },
+   "fresh_install" : true,
+   "host" : "Linux x86-64",
+   "nasm" : {
+      "archive_sha256" : "87336eba53b4acfe917424ab5d500d2b0054d9f5148d35c2273ccf2cfb712f0d",
+      "binary_sha256" : {
+         "nasm" : "14b54a750e90c1f0263eae004b12a4ee260533c8904020e30c6cde627b702137",
+         "ndisasm" : "66f145673fe238e28c40f73fa8978212fb90f43bf77104c1988b7c419b495c6f"
+      },
+      "smoke_test" : {
+         "flat_8086_code_hex" : "b83412cb",
+         "later_instruction_rejected" : true
+      },
+      "version" : "3.02"
+   },
+   "native_runtime_tested" : false,
+   "offline_exact_archives" : true,
+   "passed" : true,
+   "perl" : "v5.40.1",
+   "schema" : "pcgeos1-toolchain-integration-v2",
+   "sdk" : "0.2.0",
+   "source_locks" : [
+      "toolchains/open-watcom.lock.json",
+      "toolchains/freegeos.lock.json",
+      "toolchains/nasm.lock.json"
+   ],
+   "watcom" : {
+      "archive_sha256" : "6952102644d5561b3074b73d549ba12dd49cc7f21847ffad0336eee5b39a65ae",
+      "extracted_file_count" : 1057,
+      "installer_executed" : false
+   }
+}

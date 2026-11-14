@@ -1,0 +1,19 @@
+{
+  "schema": "pcgeos1-lsp-host-measurement-v1",
+  "host": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "source_lines": 10002,
+  "source_utf8_bytes": 218934,
+  "diagnostics_ms": 105.618,
+  "completion_ms": 188.439,
+  "diagnostic_count": 1,
+  "completion_count": 16,
+  "process_peak_rss": 24796,
+  "process_peak_rss_unit": "KiB (Linux)",
+  "measurement_runs": 1,
+  "scope": "Host language services, in-process; excludes IDE and stdio transport",
+  "limitations": [
+    "One machine and run; not a comparative performance benchmark",
+    "Not GEOS RAM consumption, native loader evidence or 8086 timing"
+  ]
+}

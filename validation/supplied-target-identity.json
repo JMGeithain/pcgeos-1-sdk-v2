@@ -1,0 +1,44 @@
+{
+  "schema": "pcgeos1-target-identity-check-v1",
+  "target_id": "supplied-ensemble12-622.3-ui693.0",
+  "files_match": true,
+  "files": [
+    {
+      "path": "KERNEL.EXE",
+      "expected_sha256": "c2cc8952cdb01d0f459bf281ee3b78f8ce9464aba0b58c3758f8c73e24fb6eb5",
+      "observed_sha256": "c2cc8952cdb01d0f459bf281ee3b78f8ce9464aba0b58c3758f8c73e24fb6eb5",
+      "sha256_matches": true
+    },
+    {
+      "path": "SYSTEM/UI.GEO",
+      "expected_sha256": "47366c60fc4f3195e9a40eaeb805af505ec8885293064e9bc8c1b2033e941f77",
+      "observed_sha256": "47366c60fc4f3195e9a40eaeb805af505ec8885293064e9bc8c1b2033e941f77",
+      "sha256_matches": true,
+      "observed_protocol": [
+        693,
+        0
+      ],
+      "observed_kernel_protocol_required": [
+        622,
+        3
+      ]
+    },
+    {
+      "path": "SYSTEM/MOTIF.GEO",
+      "expected_sha256": "17e942b2107fa6c3334464d6a255b68a40bf1de9d0cbe4755175b83faa327482",
+      "observed_sha256": "17e942b2107fa6c3334464d6a255b68a40bf1de9d0cbe4755175b83faa327482",
+      "sha256_matches": true,
+      "observed_protocol": [
+        693,
+        1
+      ],
+      "observed_kernel_protocol_required": [
+        622,
+        3
+      ]
+    }
+  ],
+  "runtime_tested": false,
+  "api_certified": false,
+  "notice": "File identity is checked; application and native-loader behavior require runtime tests."
+}

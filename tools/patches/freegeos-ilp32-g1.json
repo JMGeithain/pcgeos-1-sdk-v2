@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "description": "Reviewed Linux ILP32 host portability, no-debug OMF support, deterministic serial and opt-in G1 kernel path restoration. Does not introduce a target ABI.",
+  "files": [
+    {
+      "path": "Tools/glue/library.c",
+      "before_sha256_lf": "e9fed06cdbdc979c85fc688c658678ea027c40a8420e8b5dd505cfdf3b957934",
+      "after_sha256_lf": "eaed6d9d7ec88ded36bdcdde65b055cb36988ea7f48d719b2a669b0247792a71",
+      "edits": [
+        {
+          "start": 1679,
+          "delete": 5,
+          "before": "\tsprintf(file, \"kernel protocol is too low (%d.%d) -- we don't do 1.x links anymore\\n\",\n\t\thdr->proto.major, hdr->proto.minor);\n\tyyerror(file);\n\tVMClose(fh);\n\treturn (LLV_FAILURE);\n",
+          "after": "        if (geosRelease == 1) {\n            /* geos1-sdk: restore the existing v1 kernel relocation path. */\n            libs[numLibs].lnum = IS_KERNEL;\n        } else {\n            sprintf(file, \"1.x kernel protocol %d.%d requires -G 1\\n\",\n                    hdr->proto.major, hdr->proto.minor);\n            yyerror(file);\n            VMClose(fh);\n            return LLV_FAILURE;\n        }\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/glue/main.c",
+      "before_sha256_lf": "50da29defc97b07bcc0f087f533eebf6a2df264b108f22caa752e1e7ffd6040b",
+      "after_sha256_lf": "459ccc7566f733ef2cbf5f0eba2f6d59cd3acb96dcd19a654f6a7b78ed433416",
+      "edits": [
+        {
+          "start": 2203,
+          "delete": 3,
+          "before": "#if defined _WIN32\n    serialNumber = (word) (GetTickCount() / 100);\n#else\n",
+          "after": "/* geos1-sdk host portability: deterministic serial when requested. */\n"
+        },
+        {
+          "start": 2207,
+          "delete": 8,
+          "before": "\tstruct timespec ts;\n\tif(clock_gettime(CLOCK_MONOTONIC, &ts) != 0) {\n\t    serialNumber = time(0);\n        }\n\telse {\n\t    serialNumber = \n\t\t    (ts.tv_nsec/10000 + ts.tv_sec*1000);\n\t}\n",
+          "after": "        const char *epoch = getenv(\"SOURCE_DATE_EPOCH\");\n        serialNumber = (word)(epoch ? strtoul(epoch, (char **)0, 10) : time(0));\n"
+        },
+        {
+          "start": 2216,
+          "delete": 1,
+          "before": "#endif /* defined _WIN32 */\n",
+          "after": "\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/utils/printf.c",
+      "before_sha256_lf": "d8ecb903847f3d547c94153a51a744540a1099e35dd7febed4535e5fd3d7e874",
+      "after_sha256_lf": "f9a4e68b94c79b3cddb8d25d55474e96f7090aea9a25ec82a769bcd6cf5b96d2",
+      "edits": [
+        {
+          "start": 64,
+          "delete": 0,
+          "before": "",
+          "after": "/* geos1-sdk host portability: never inspect a compiler CRT's FILE internals. */\n#if defined(__WATCOMC__)\n# undef putc\n# define putc(c, stream) fputc((c), (stream))\n#endif\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/include/compat/string.h",
+      "before_sha256_lf": "f191aafd4d1f3525d0c325b8c196090f2312ee35a389f8c99cd6511aea55163a",
+      "after_sha256_lf": "b4a44a280c5a391e4a66cfd509a10adf729c11f9079ea5894a41c4805f20b5fb",
+      "edits": [
+        {
+          "start": 35,
+          "delete": 0,
+          "before": "",
+          "after": "#if defined(_LINUX) && defined(__WATCOMC__)\n/* geos1-sdk: BSD declarations include compiler register-call pragmas. */\n#include <strings.h>\n/* geos1-sdk: avoid implicit/intrinsic-only BSD library veneers. */\n#define bzero(dst, count) memset((dst), 0, (count))\n#define bcopy(src, dst, count) memmove((dst), (src), (count))\n#define bcmp(a, b, count) memcmp((a), (b), (count))\n#endif\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/include/config.h",
+      "before_sha256_lf": "73aa3415452dcf427b3bb7fbf592ce46edee12a854b81a73d1afb8ca4e05ba84",
+      "after_sha256_lf": "7dd33745795f2f5c6a5586d104b0867eba3ff7787c6a27b3aad2806c3b6d72bb",
+      "edits": [
+        {
+          "start": 396,
+          "delete": 0,
+          "before": "",
+          "after": "/* geos1-sdk host portability: old utility files call BSD routines implicitly. */\n#if defined(_LINUX) && defined(__WATCOMC__)\n#include <compat/string.h>\n#endif\n\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/glue/msobj.c",
+      "before_sha256_lf": "7d4e79a8bf5d937777a24632c46f67579cdc02b399103ba248af3871cd091aad",
+      "after_sha256_lf": "b3b9fd03139cfafa2b5db0a1972085e3baef8bdb5b5875ad0a0cd9beeeb8e928",
+      "edits": [
+        {
+          "start": 92,
+          "delete": 0,
+          "before": "",
+          "after": "            /* geos1-sdk: Watcom emits a bare A1 marker without debug data.\n             * MSObj_ReadRecord excludes the checksum from reclen. */\n            if (reclen == 2) {\n                return(TRUE);\n            }\n"
+        },
+        {
+          "start": 108,
+          "delete": 0,
+          "before": "",
+          "after": "\t} else if ((data[1] == BCC_DEPENDENCY) && (reclen == 2)) {\n            /* geos1-sdk: bare Watcom end-dependency marker is not Borland debug. */\n            return(TRUE);\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/glue/parse.c",
+      "before_sha256_lf": "fe179ebe31b1cc3adb38cadfb992c011baf83bf95835e82cfcb70814d5e90e36",
+      "after_sha256_lf": "c100a3d83426f05d863e22a66d4b94aeeb2d1e927cbef224684ce3beb9eb2566",
+      "edits": [
+        {
+          "start": 1053,
+          "delete": 0,
+          "before": "",
+          "after": "                    /* geos1-sdk: clear all padding after the native long name. */\n                    memset(cp2, 0, GFH_LONGNAME_BUFFER_SIZE);\n"
+        }
+      ]
+    },
+    {
+      "path": "Tools/glue/parse.y",
+      "before_sha256_lf": "c35803a903d2e84f300ebf1c43927a93a5b2d859620d61dc11046be804f01a2d",
+      "after_sha256_lf": "abf2baf411cf619c5bf138185cceb31a5cfcc2c97564d2783a6c26722bd92ebe",
+      "edits": [
+        {
+          "start": 292,
+          "delete": 0,
+          "before": "",
+          "after": "                    /* geos1-sdk: clear all padding after the native long name. */\n                    memset(cp2, 0, GFH_LONGNAME_BUFFER_SIZE);\n"
+        }
+      ]
+    }
+  ]
+}

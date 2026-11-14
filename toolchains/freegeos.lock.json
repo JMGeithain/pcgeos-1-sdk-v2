@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "upstream": "https://github.com/bluewaysw/pcgeos",
+  "commit": "260b33dcfcac15b7ecfdf04242cb0abf029ec269",
+  "license": "Apache-2.0; retained per-file GeoWorks, Berkeley and Sun notices",
+  "archive": {
+    "url": "https://codeload.github.com/bluewaysw/pcgeos/tar.gz/260b33dcfcac15b7ecfdf04242cb0abf029ec269",
+    "bytes": 100478364,
+    "sha256": "d40b28a6d74e8279e0c349308d3e93b96b3ff6866bed5cb9601c88ac0051c123"
+  },
+  "patch": {
+    "file": "tools/patches/freegeos-ilp32-g1.json",
+    "sha256": "aed8ffb46f27d3cc19acb5b027558d4c1d7b3ac9aa2ea1f981ee2164c74ad740"
+  },
+  "extract_prefixes": [
+    "Tools/include/",
+    "Tools/utils/",
+    "Tools/compat/",
+    "Tools/esp/",
+    "Tools/glue/"
+  ],
+  "extract_files": [
+    "LICENSE.txt"
+  ],
+  "host": "Linux x86-64 compiler -> Linux i386 ELF host tools",
+  "compiler": "Open Watcom wcc386/wcl386; separately pinned in open-watcom.lock.json",
+  "compile_flags": [
+    "-bt=linux",
+    "-d_LINUX",
+    "-dYYDEBUG=1",
+    "-dLEXDEBUG=1",
+    "-zp=1",
+    "-ei",
+    "-j",
+    "-zq",
+    "-w1"
+  ],
+  "link_flags": [
+    "-bt=linux",
+    "-zq"
+  ],
+  "scope": "Esp and Glue only. Current 2.x+ target includes/import libraries are deliberately not installed as 1.x APIs. Actual GEOS 1.x runtime API profiles are user supplied and independently validated."
+}

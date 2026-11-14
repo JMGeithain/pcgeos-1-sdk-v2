@@ -1,0 +1,25 @@
+{
+  "schema": "pcgeos1-multi-ide-assets-validation-v1",
+  "checked_at_utc": "2026-11-14",
+  "passed": true,
+  "kde_xml_schema_validated_files": [
+    "editor/kate/pcgeos-esp.xml",
+    "editor/kate/pcgeos-goc.xml",
+    "editor/kate/pcgeos-gp.xml",
+    "editor/kate/pcgeos-nasm.xml",
+    "editor/kate/pcgeos-ui.xml"
+  ],
+  "schema_source": "https://raw.githubusercontent.com/KDE/syntax-highlighting/master/data/schema/language.xsd",
+  "schema_sha256": "56942882cf6b4593e658038fec79e19d8542e0593847336aa46050f058e63334",
+  "textmate_grammar_count": 5,
+  "automated_asset_tests": 6,
+  "tests": "tests/editor/test_multiide_assets.py",
+  "posix_launcher_with_spaced_source_path_tested": true,
+  "graphical_ide_installation_tested": false,
+  "windows_cmd_launcher_tested": false,
+  "limits": [
+    "Schema/asset/protocol checks do not establish graphical rendering in every IDE",
+    "Language server source checks are bounded lexical aids, not a compiler",
+    "IDE completion and API facts use only the observed Ensemble 1.2 catalog"
+  ]
+}

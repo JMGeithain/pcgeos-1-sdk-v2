@@ -1,0 +1,28 @@
+{
+   "c_code_hex" : "5589e58b4606b10589c2d3e2b10bd3e809c28b460830e431d05dcb",
+   "checksum_cases" : 67096,
+   "engine" : "bounded-perl-8086",
+   "fixed_resource_test_relocation" : {
+      "info" : 34,
+      "operand_offset" : 13,
+      "resource" : 3,
+      "target_resource" : 2,
+      "test_load_segment" : 4096
+   },
+   "geode_format_valid" : true,
+   "geos_runtime_tested" : false,
+   "input" : "pcgeos1-sdk/build/g1mixed/g1mixed.geo",
+   "input_bytes" : 436,
+   "input_sha256" : "ae54fc5fafd859d4e996375a48d9dbbe8457bbff7b09d48a73458df22eb19e11",
+   "kind" : "mixed",
+   "limitations" : [
+      "Interprets only the audited sample opcodes; every other opcode/addressing mode is rejected",
+      "No instruction timing, hardware, DOS, kernel API or general GEOS loader test",
+      "One known fixed-resource segment fixup applied only for the mixed sample"
+   ],
+   "native_loader_tested" : false,
+   "passed" : true,
+   "saturating_add_cases" : 4160,
+   "schema" : "pcgeos1-emitted-c-geode-perl-v1",
+   "total_cases" : 71256
+}

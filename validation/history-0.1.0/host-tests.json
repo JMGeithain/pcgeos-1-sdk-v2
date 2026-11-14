@@ -1,0 +1,12 @@
+{
+  "schema": "pcgeos1-host-test-result-v1",
+  "passed": true,
+  "test_count": 132,
+  "elapsed_seconds": 1.825,
+  "host": "Linux x86-64",
+  "python": "3.12.14",
+  "compiler_optional_test_enabled": true,
+  "node_client_test_enabled": true,
+  "command": "GEOS1_WCC=<pinned-wcc-path> python sdk.py test",
+  "native_runtime_tested_by_this_command": false
+}

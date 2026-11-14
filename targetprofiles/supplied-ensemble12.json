@@ -1,0 +1,4268 @@
+{
+  "schema": "pcgeos1-observed-runtime-profile-v1",
+  "status": "observed-not-runtime-certified",
+  "complete_for_supplied_paths": true,
+  "kernel_executable_parsed": false,
+  "runtime_tested": false,
+  "api_signatures_verified": false,
+  "notice": "Ordinals have no inferred symbol names or signatures. A matching protocol does not prove an application works. DOS KERNEL.EXE needs a separate format-specific audit.",
+  "modules": [
+    {
+      "file": "GROBJ.GEO",
+      "name": "grobj",
+      "extension": "lib",
+      "sha256": "ab82bbfd21a79e9bd6bf932aa43da2ebe1313e23c97b2a0d1d21ecce8d6e4e77",
+      "protocol": [
+        507,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "exports": [
+        {
+          "ordinal": 0,
+          "offset": 4,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 1,
+          "offset": 1050,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 2,
+          "offset": 1613,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 3,
+          "offset": 214,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 4,
+          "offset": 1664,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 5,
+          "offset": 1788,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 6,
+          "offset": 906,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 7,
+          "offset": 954,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 8,
+          "offset": 1008,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 9,
+          "offset": 1812,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 10,
+          "offset": 1884,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 11,
+          "offset": 1956,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 12,
+          "offset": 2034,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 13,
+          "offset": 2052,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 14,
+          "offset": 2118,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 15,
+          "offset": 2238,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 16,
+          "offset": 2358,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 17,
+          "offset": 2722,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 18,
+          "offset": 2818,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 19,
+          "offset": 83,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 20,
+          "offset": 106,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        }
+      ],
+      "import_requirements": [
+        {
+          "index": 0,
+          "name": "ui",
+          "raw_name_hex": "7569202020202020",
+          "attributes": 16384,
+          "protocol": [
+            693,
+            0
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "file": "KLIB.GEO",
+      "name": "klib",
+      "extension": "lib",
+      "sha256": "81e4bd6964bd40cb1f4abece2faaa1c17a10ce6d0f0e8d79373064012acfe02e",
+      "protocol": [
+        611,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "exports": [
+        {
+          "ordinal": 0,
+          "offset": 572,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 1,
+          "offset": 37,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 2,
+          "offset": 0,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 3,
+          "offset": 508,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 4,
+          "offset": 1955,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 5,
+          "offset": 86,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 6,
+          "offset": 0,
+          "resource": 9,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 7,
+          "offset": 0,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 8,
+          "offset": 499,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 9,
+          "offset": 1318,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 10,
+          "offset": 1472,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 11,
+          "offset": 1536,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 12,
+          "offset": 0,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 13,
+          "offset": 1682,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 14,
+          "offset": 1723,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 15,
+          "offset": 79,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 16,
+          "offset": 1071,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 17,
+          "offset": 805,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 18,
+          "offset": 1874,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 19,
+          "offset": 272,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 20,
+          "offset": 318,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 21,
+          "offset": 2001,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 22,
+          "offset": 2110,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 23,
+          "offset": 2248,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 24,
+          "offset": 121,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 25,
+          "offset": 0,
+          "resource": 12,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 26,
+          "offset": 33,
+          "resource": 25,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 27,
+          "offset": 221,
+          "resource": 25,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 28,
+          "offset": 0,
+          "resource": 25,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 29,
+          "offset": 2257,
+          "resource": 13,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 30,
+          "offset": 2590,
+          "resource": 13,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 31,
+          "offset": 0,
+          "resource": 13,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 32,
+          "offset": 30,
+          "resource": 13,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 33,
+          "offset": 0,
+          "resource": 14,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 34,
+          "offset": 109,
+          "resource": 15,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 35,
+          "offset": 1,
+          "resource": 15,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 36,
+          "offset": 108,
+          "resource": 15,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 37,
+          "offset": 216,
+          "resource": 15,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 38,
+          "offset": 31,
+          "resource": 16,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 39,
+          "offset": 0,
+          "resource": 16,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 40,
+          "offset": 946,
+          "resource": 17,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 41,
+          "offset": 0,
+          "resource": 17,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 42,
+          "offset": 305,
+          "resource": 17,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 43,
+          "offset": 650,
+          "resource": 17,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 44,
+          "offset": 271,
+          "resource": 21,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 45,
+          "offset": 412,
+          "resource": 21,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 46,
+          "offset": 0,
+          "resource": 19,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 47,
+          "offset": 275,
+          "resource": 18,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 48,
+          "offset": 973,
+          "resource": 18,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 49,
+          "offset": 496,
+          "resource": 18,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 50,
+          "offset": 614,
+          "resource": 18,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 51,
+          "offset": 0,
+          "resource": 18,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 52,
+          "offset": 0,
+          "resource": 21,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 53,
+          "offset": 1169,
+          "resource": 18,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 54,
+          "offset": 0,
+          "resource": 20,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 55,
+          "offset": 63,
+          "resource": 20,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 56,
+          "offset": 116,
+          "resource": 20,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 57,
+          "offset": 199,
+          "resource": 20,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 58,
+          "offset": 239,
+          "resource": 20,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 59,
+          "offset": 0,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 60,
+          "offset": 85,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 61,
+          "offset": 0,
+          "resource": 22,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 62,
+          "offset": 0,
+          "resource": 23,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 63,
+          "offset": 0,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 64,
+          "offset": 0,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 65,
+          "offset": 0,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 66,
+          "offset": 0,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 67,
+          "offset": 171,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 68,
+          "offset": 378,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 69,
+          "offset": 386,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 70,
+          "offset": 837,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 71,
+          "offset": 394,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 72,
+          "offset": 532,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 73,
+          "offset": 539,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 74,
+          "offset": 546,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 75,
+          "offset": 866,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 76,
+          "offset": 750,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 77,
+          "offset": 902,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 78,
+          "offset": 918,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 79,
+          "offset": 1056,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 80,
+          "offset": 0,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 81,
+          "offset": 1294,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 82,
+          "offset": 1211,
+          "resource": 24,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 83,
+          "offset": 0,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 84,
+          "offset": 140,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 85,
+          "offset": 274,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 86,
+          "offset": 326,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 87,
+          "offset": 384,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 88,
+          "offset": 425,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 89,
+          "offset": 464,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 90,
+          "offset": 556,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 91,
+          "offset": 664,
+          "resource": 27,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 92,
+          "offset": 0,
+          "resource": 28,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 93,
+          "offset": 192,
+          "resource": 28,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 94,
+          "offset": 327,
+          "resource": 28,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 95,
+          "offset": 0,
+          "resource": 33,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 96,
+          "offset": 547,
+          "resource": 33,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 97,
+          "offset": 624,
+          "resource": 33,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 98,
+          "offset": 374,
+          "resource": 33,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 99,
+          "offset": 190,
+          "resource": 33,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 100,
+          "offset": 0,
+          "resource": 34,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 101,
+          "offset": 526,
+          "resource": 35,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 102,
+          "offset": 758,
+          "resource": 35,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 103,
+          "offset": 0,
+          "resource": 36,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 104,
+          "offset": 317,
+          "resource": 36,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 105,
+          "offset": 562,
+          "resource": 36,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 106,
+          "offset": 20,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 107,
+          "offset": 78,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 108,
+          "offset": 184,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 109,
+          "offset": 288,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 110,
+          "offset": 68,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 111,
+          "offset": 1,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 112,
+          "offset": 651,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 113,
+          "offset": 0,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 114,
+          "offset": 983,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 115,
+          "offset": 968,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 116,
+          "offset": 1068,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 117,
+          "offset": 1034,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 118,
+          "offset": 1123,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 119,
+          "offset": 787,
+          "resource": 31,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 120,
+          "offset": 148,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 121,
+          "offset": 320,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 122,
+          "offset": 449,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 123,
+          "offset": 488,
+          "resource": 32,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 124,
+          "offset": 0,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 125,
+          "offset": 50,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 126,
+          "offset": 104,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 127,
+          "offset": 134,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 128,
+          "offset": 188,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 129,
+          "offset": 195,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 130,
+          "offset": 163,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 131,
+          "offset": 83,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 132,
+          "offset": 27,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 133,
+          "offset": 271,
+          "resource": 37,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 134,
+          "offset": 0,
+          "resource": 38,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 135,
+          "offset": 90,
+          "resource": 38,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 136,
+          "offset": 39,
+          "resource": 38,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 137,
+          "offset": 145,
+          "resource": 38,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 138,
+          "offset": 0,
+          "resource": 30,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 139,
+          "offset": 14,
+          "resource": 29,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 140,
+          "offset": 448,
+          "resource": 30,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 141,
+          "offset": 0,
+          "resource": 39,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        }
+      ],
+      "import_requirements": [
+        {
+          "index": 0,
+          "name": "im",
+          "raw_name_hex": "696d202020202020",
+          "attributes": 16384,
+          "protocol": [
+            601,
+            0
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "file": "MOTIF.GEO",
+      "name": "motif",
+      "extension": "spui",
+      "sha256": "17e942b2107fa6c3334464d6a255b68a40bf1de9d0cbe4755175b83faa327482",
+      "protocol": [
+        693,
+        1
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "exports": [
+        {
+          "ordinal": 0,
+          "offset": 6816,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 1,
+          "offset": 6811,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 2,
+          "offset": 7281,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 3,
+          "offset": 7362,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 4,
+          "offset": 7369,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 5,
+          "offset": 7376,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 6,
+          "offset": 7383,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 7,
+          "offset": 7267,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 8,
+          "offset": 7274,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 9,
+          "offset": 7274,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 10,
+          "offset": 7246,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 11,
+          "offset": 6823,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 12,
+          "offset": 3382,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 13,
+          "offset": 7164,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 14,
+          "offset": 7253,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 15,
+          "offset": 7260,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 16,
+          "offset": 7213,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 17,
+          "offset": 7290,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 18,
+          "offset": 7390,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 19,
+          "offset": 7407,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 20,
+          "offset": 7452,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 21,
+          "offset": 7480,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 22,
+          "offset": 7473,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 23,
+          "offset": 6197,
+          "resource": 26,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 24,
+          "offset": 6204,
+          "resource": 26,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 25,
+          "offset": 6211,
+          "resource": 26,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 26,
+          "offset": 7501,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        }
+      ],
+      "import_requirements": [
+        {
+          "index": 0,
+          "name": "im",
+          "raw_name_hex": "696d202020202020",
+          "attributes": 16384,
+          "protocol": [
+            601,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "ui",
+          "raw_name_hex": "7569202020202020",
+          "attributes": 16384,
+          "protocol": [
+            693,
+            0
+          ]
+        },
+        {
+          "index": 2,
+          "name": "dbase",
+          "raw_name_hex": "6462617365202020",
+          "attributes": 16384,
+          "protocol": [
+            601,
+            0
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "file": "UI.GEO",
+      "name": "ui",
+      "extension": "lib",
+      "sha256": "47366c60fc4f3195e9a40eaeb805af505ec8885293064e9bc8c1b2033e941f77",
+      "protocol": [
+        693,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "exports": [
+        {
+          "ordinal": 0,
+          "offset": 2272,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 1,
+          "offset": 3670,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 2,
+          "offset": 3455,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 3,
+          "offset": 3464,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 4,
+          "offset": 3473,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 5,
+          "offset": 3766,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 6,
+          "offset": 3775,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 7,
+          "offset": 3784,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 8,
+          "offset": 4164,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 9,
+          "offset": 4173,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 10,
+          "offset": 4182,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 11,
+          "offset": 4191,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 12,
+          "offset": 4200,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 13,
+          "offset": 4209,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 14,
+          "offset": 4218,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 15,
+          "offset": 4227,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 16,
+          "offset": 3546,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 17,
+          "offset": 3644,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 18,
+          "offset": 3584,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 19,
+          "offset": 4796,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 20,
+          "offset": 4825,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 21,
+          "offset": 4130,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 22,
+          "offset": 4159,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 23,
+          "offset": 4254,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 24,
+          "offset": 4341,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 25,
+          "offset": 4308,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 26,
+          "offset": 2189,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 27,
+          "offset": 2291,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 28,
+          "offset": 4840,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 29,
+          "offset": 4542,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 30,
+          "offset": 4722,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 31,
+          "offset": 4410,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 32,
+          "offset": 4472,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 33,
+          "offset": 1643,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 34,
+          "offset": 1344,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 35,
+          "offset": 2395,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 36,
+          "offset": 4236,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 37,
+          "offset": 4245,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 38,
+          "offset": 1525,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 39,
+          "offset": 1540,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 40,
+          "offset": 1490,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 41,
+          "offset": 1509,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 42,
+          "offset": 1734,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 43,
+          "offset": 64,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 44,
+          "offset": 2065,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 45,
+          "offset": 0,
+          "resource": 0,
+          "empty": true,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 46,
+          "offset": 778,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 47,
+          "offset": 126,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 48,
+          "offset": 139,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 49,
+          "offset": 309,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 50,
+          "offset": 294,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 51,
+          "offset": 1190,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 52,
+          "offset": 55,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 53,
+          "offset": 154,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 54,
+          "offset": 229,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 55,
+          "offset": 253,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 56,
+          "offset": 1220,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 57,
+          "offset": 71,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 58,
+          "offset": 85,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 59,
+          "offset": 99,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 60,
+          "offset": 278,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 61,
+          "offset": 844,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 62,
+          "offset": 431,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 63,
+          "offset": 911,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 64,
+          "offset": 946,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 65,
+          "offset": 971,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 66,
+          "offset": 1252,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 67,
+          "offset": 1347,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 68,
+          "offset": 483,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 69,
+          "offset": 547,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 70,
+          "offset": 1199,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 71,
+          "offset": 1471,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 72,
+          "offset": 1691,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 73,
+          "offset": 1871,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 74,
+          "offset": 1905,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 75,
+          "offset": 993,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 76,
+          "offset": 1147,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 77,
+          "offset": 1123,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 78,
+          "offset": 1171,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 79,
+          "offset": 793,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 80,
+          "offset": 589,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 81,
+          "offset": 459,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 82,
+          "offset": 745,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 83,
+          "offset": 677,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 84,
+          "offset": 613,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 85,
+          "offset": 893,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 86,
+          "offset": 935,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 87,
+          "offset": 1265,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 88,
+          "offset": 1311,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 89,
+          "offset": 2011,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 90,
+          "offset": 2035,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 91,
+          "offset": 516,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 92,
+          "offset": 528,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 93,
+          "offset": 541,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 94,
+          "offset": 553,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 95,
+          "offset": 566,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 96,
+          "offset": 581,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 97,
+          "offset": 2102,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 98,
+          "offset": 2139,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 99,
+          "offset": 2163,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 100,
+          "offset": 1035,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 101,
+          "offset": 1420,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 102,
+          "offset": 662,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 103,
+          "offset": 713,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 104,
+          "offset": 19,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 105,
+          "offset": 626,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 106,
+          "offset": 597,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 107,
+          "offset": 612,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 108,
+          "offset": 2305,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 109,
+          "offset": 2410,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 110,
+          "offset": 643,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 111,
+          "offset": 1467,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 112,
+          "offset": 1353,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 113,
+          "offset": 942,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 114,
+          "offset": 1683,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 115,
+          "offset": 1731,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 116,
+          "offset": 1875,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 117,
+          "offset": 1924,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 118,
+          "offset": 2132,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 119,
+          "offset": 2133,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 120,
+          "offset": 2207,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 121,
+          "offset": 2274,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 122,
+          "offset": 3361,
+          "resource": 8,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 123,
+          "offset": 2703,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 124,
+          "offset": 3325,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 125,
+          "offset": 3601,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 126,
+          "offset": 2728,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 127,
+          "offset": 0,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 128,
+          "offset": 571,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 129,
+          "offset": 677,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 130,
+          "offset": 758,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 131,
+          "offset": 471,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 132,
+          "offset": 1032,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 133,
+          "offset": 1041,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 134,
+          "offset": 1050,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 135,
+          "offset": 1078,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 136,
+          "offset": 1096,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 137,
+          "offset": 1213,
+          "resource": 6,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 138,
+          "offset": 3492,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 139,
+          "offset": 3529,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 140,
+          "offset": 3565,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 141,
+          "offset": 16575,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 142,
+          "offset": 4254,
+          "resource": 22,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 143,
+          "offset": 110,
+          "resource": 12,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 144,
+          "offset": 0,
+          "resource": 26,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 145,
+          "offset": 102,
+          "resource": 26,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 146,
+          "offset": 206,
+          "resource": 26,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 147,
+          "offset": 16243,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 148,
+          "offset": 16378,
+          "resource": 11,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 149,
+          "offset": 3653,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 150,
+          "offset": 3343,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 151,
+          "offset": 3300,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 152,
+          "offset": 3314,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 153,
+          "offset": 0,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 154,
+          "offset": 3404,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 155,
+          "offset": 578,
+          "resource": 9,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 156,
+          "offset": 469,
+          "resource": 9,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 157,
+          "offset": 3259,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 158,
+          "offset": 4288,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 159,
+          "offset": 3846,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 160,
+          "offset": 4306,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 161,
+          "offset": 4601,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 162,
+          "offset": 2406,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 163,
+          "offset": 4703,
+          "resource": 1,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 164,
+          "offset": 115,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 165,
+          "offset": 2643,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 166,
+          "offset": 5150,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 167,
+          "offset": 5171,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 168,
+          "offset": 5667,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 169,
+          "offset": 5252,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 170,
+          "offset": 5268,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 171,
+          "offset": 5282,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 172,
+          "offset": 5296,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 173,
+          "offset": 4978,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 174,
+          "offset": 5323,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 175,
+          "offset": 971,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 176,
+          "offset": 1145,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 177,
+          "offset": 5081,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 178,
+          "offset": 5363,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 179,
+          "offset": 5407,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 180,
+          "offset": 5429,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 181,
+          "offset": 5453,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 182,
+          "offset": 5466,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 183,
+          "offset": 5513,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 184,
+          "offset": 5573,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 185,
+          "offset": 5693,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 186,
+          "offset": 5720,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 187,
+          "offset": 2321,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 188,
+          "offset": 6179,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 189,
+          "offset": 5995,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 190,
+          "offset": 5748,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 191,
+          "offset": 1505,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 192,
+          "offset": 905,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 193,
+          "offset": 1069,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 194,
+          "offset": 1141,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 195,
+          "offset": 1611,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 196,
+          "offset": 1685,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 197,
+          "offset": 2208,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 198,
+          "offset": 6304,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 199,
+          "offset": 4954,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 200,
+          "offset": 4941,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 201,
+          "offset": 6368,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 202,
+          "offset": 6389,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 203,
+          "offset": 6358,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 204,
+          "offset": 6522,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 205,
+          "offset": 6533,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 206,
+          "offset": 6544,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 207,
+          "offset": 6555,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 208,
+          "offset": 1329,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 209,
+          "offset": 1352,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 210,
+          "offset": 1368,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 211,
+          "offset": 1391,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 212,
+          "offset": 6566,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 213,
+          "offset": 6636,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 214,
+          "offset": 6610,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 215,
+          "offset": 1234,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 216,
+          "offset": 1260,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 217,
+          "offset": 1283,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 218,
+          "offset": 1306,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 219,
+          "offset": 1222,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 220,
+          "offset": 1345,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 221,
+          "offset": 5347,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 222,
+          "offset": 3788,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 223,
+          "offset": 6687,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 224,
+          "offset": 4050,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 225,
+          "offset": 2055,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 226,
+          "offset": 6946,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 227,
+          "offset": 6688,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 228,
+          "offset": 6808,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 229,
+          "offset": 6662,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 230,
+          "offset": 5526,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 231,
+          "offset": 168,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 232,
+          "offset": 4732,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 233,
+          "offset": 2542,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 234,
+          "offset": 1407,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 235,
+          "offset": 1500,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 236,
+          "offset": 1541,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 237,
+          "offset": 1564,
+          "resource": 10,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 238,
+          "offset": 6964,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 239,
+          "offset": 3342,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 240,
+          "offset": 3339,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 241,
+          "offset": 3340,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 242,
+          "offset": 3341,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 243,
+          "offset": 18,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 244,
+          "offset": 3932,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 245,
+          "offset": 3933,
+          "resource": 7,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 246,
+          "offset": 4939,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 247,
+          "offset": 4863,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 248,
+          "offset": 4888,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 249,
+          "offset": 4913,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 250,
+          "offset": 4938,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 251,
+          "offset": 17,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 252,
+          "offset": 4940,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 253,
+          "offset": 3338,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 254,
+          "offset": 16,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 255,
+          "offset": 1983,
+          "resource": 5,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 256,
+          "offset": 2671,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 257,
+          "offset": 2648,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 258,
+          "offset": 1141,
+          "resource": 3,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 259,
+          "offset": 787,
+          "resource": 4,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 260,
+          "offset": 2563,
+          "resource": 2,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        },
+        {
+          "ordinal": 261,
+          "offset": 982,
+          "resource": 3,
+          "empty": false,
+          "symbol_name": null,
+          "calling_convention": null,
+          "note": "Resource/offset is a disk reference, not a loaded address."
+        }
+      ],
+      "import_requirements": [
+        {
+          "index": 0,
+          "name": "im",
+          "raw_name_hex": "696d202020202020",
+          "attributes": 16384,
+          "protocol": [
+            601,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "dbase",
+          "raw_name_hex": "6462617365202020",
+          "attributes": 16384,
+          "protocol": [
+            601,
+            0
+          ]
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "rejected_files": [],
+  "target_identity_schema": "pcgeos1-pinned-target-v1",
+  "target_id": "supplied-ensemble12-622.3-ui693.0",
+  "target_name": "User-supplied GWSVGA Ensemble1.2 runtime",
+  "kernel_protocol_required": [
+    622,
+    3
+  ],
+  "target_scope": "Only the exact supplied runtime identities; no universal1.x certification",
+  "kernel_protocol_evidence": "All140 structurally valid supplied native GEOs require622.3; the DOS kernel is pinned by SHA256, not decoded by the native-GEO parser.",
+  "required_files": [
+    {
+      "path": "KERNEL.EXE",
+      "sha256": "c2cc8952cdb01d0f459bf281ee3b78f8ce9464aba0b58c3758f8c73e24fb6eb5",
+      "native_geode": false
+    },
+    {
+      "path": "SYSTEM/UI.GEO",
+      "sha256": "47366c60fc4f3195e9a40eaeb805af505ec8885293064e9bc8c1b2033e941f77",
+      "native_geode": true,
+      "protocol": [
+        693,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ]
+    },
+    {
+      "path": "SYSTEM/MOTIF.GEO",
+      "sha256": "17e942b2107fa6c3334464d6a255b68a40bf1de9d0cbe4755175b83faa327482",
+      "native_geode": true,
+      "protocol": [
+        693,
+        1
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ]
+    }
+  ]
+}

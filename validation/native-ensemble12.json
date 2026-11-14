@@ -1,0 +1,120 @@
+{
+  "schema": "pcgeos1-native-runtime-validation-v1",
+  "checked_at_utc": "2026-11-14",
+  "passed": true,
+  "target_id": "supplied-ensemble12-622.3-ui693.0",
+  "input_archive": "GWSVGA(2).zip",
+  "runtime_redistributed": false,
+  "hardware_tested": false,
+  "emulator": {
+    "name": "DOSBox-X",
+    "version": "2025.02.01",
+    "reported_commit": "32b2c24",
+    "core": "normal",
+    "cputype": "8086",
+    "fixed_cycles": 12000,
+    "cycles_calibrated_to_physical_hardware": false,
+    "fpu": false,
+    "machine": "svga_s3",
+    "memsize_mib": 1,
+    "xms": false,
+    "ems": false,
+    "umb": false
+  },
+  "guest_probes": {
+    "cpu_config_output": "8086",
+    "bios_int12_output": "BIOS_CONVENTIONAL_KB=640",
+    "conventional_memory_kib": 640
+  },
+  "geos": {
+    "kernel_protocol_required": [
+      622,
+      3
+    ],
+    "ui_protocol": [
+      693,
+      0
+    ],
+    "motif_protocol": [
+      693,
+      1
+    ],
+    "video_driver": "VGA.GEO",
+    "resolution": [
+      640,
+      480
+    ],
+    "memory_drivers": [
+      "disk.geo"
+    ],
+    "disk_swap_enabled": true
+  },
+  "actions_observed": {
+    "unmodified_runtime_boot": true,
+    "hello_initial_draw": true,
+    "hello_maximize": true,
+    "hello_restore": true,
+    "hello_minimize": true,
+    "hello_restore_from_desktop_label": true,
+    "hello_system_menu": true,
+    "hello_normal_close": true,
+    "hello_relaunch": true,
+    "native_library_probe": "PASS",
+    "native_library_comparisons": 5,
+    "assembly_library_loaded_and_called": true,
+    "c_library_loaded_and_called": true,
+    "mixed_library_loaded_and_called": true
+  },
+  "native_test_binaries": [
+    {
+      "file": "WORLD/G1HELLO.GEO",
+      "bytes": 1668,
+      "sha256": "5be45e9c4cb9991e84496a3c4994080b7e2cb974012948de6b2660534ebe3d8d",
+      "source_project": "examples/hello-asm"
+    },
+    {
+      "file": "WORLD/G1PROBE.GEO",
+      "bytes": 1938,
+      "sha256": "754224f270310325738b74e538a621cca6cbcc09b69b105e6e6d57f4c4dbb828",
+      "source_project": "examples/hello-libraries"
+    },
+    {
+      "file": "SYSTEM/G1MATH.GEO",
+      "bytes": 354,
+      "sha256": "412f1bdd923f5889f051fe7e31df88007b366a02fc41ec87fc75a67fa0dbc302",
+      "source_project": "examples/math-asm"
+    },
+    {
+      "file": "SYSTEM/G1MATHC.GEO",
+      "bytes": 370,
+      "sha256": "ccc9fd0eaf4bb064d6fbb70ec6a5e5e7dfa12ec791c58286a76157ab7b2bb690",
+      "source_project": "examples/math-c"
+    },
+    {
+      "file": "SYSTEM/G1MIXED.GEO",
+      "bytes": 436,
+      "sha256": "ae54fc5fafd859d4e996375a48d9dbbe8457bbff7b09d48a73458df22eb19e11",
+      "source_project": "examples/math-mixed"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "validation/screens/hello-8086.png",
+      "sha256": "45b797b61919ee448a7e6109588cffe815ea39afc57d8371bbb923c85246cea8",
+      "serial_number_visible": false
+    },
+    {
+      "file": "validation/screens/library-probe-8086.png",
+      "sha256": "a58447bb4e644be815d8ff89ce9862859cdfb15f139abc5d1cb840b88c4c7b51",
+      "serial_number_visible": false
+    }
+  ],
+  "limits": [
+    "Emulated instruction/core execution, not physical 8086/8088 certification or cycle-accurate timing.",
+    "640KB is guest BIOS conventional-memory capacity, not measured per-process peak use.",
+    "Disk swapping is permitted; no XMS/EMS/UMB.",
+    "No exhaustive allocation-failure injection, long soak or arbitrary-driver certification.",
+    "Only the recorded sample functions and exact supplied target are native-tested.",
+    "Welcome and desktop-close screenshots containing the runtime serial were excluded."
+  ]
+}

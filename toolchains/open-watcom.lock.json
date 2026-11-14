@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "upstream": "https://github.com/open-watcom/open-watcom-v2",
+  "license": "Sybase Open Watcom Public License",
+  "license_file_in_archive": "license.txt",
+  "tested_host": "linux-x86_64",
+  "compiler_banner": "Open Watcom C x86 16-bit Optimizing Compiler, Version 2.0 beta Nov 14 2026 07:06:10 (64-bit)",
+  "asset": {
+    "id": 746845644,
+    "name": "open-watcom-2_0-c-linux-x64",
+    "url": "https://github.com/open-watcom/open-watcom-v2/releases/download/Current-build/open-watcom-2_0-c-linux-x64",
+    "api_url": "https://api.github.com/repos/open-watcom/open-watcom-v2/releases/assets/746845644",
+    "created_at": "2026-11-14T08:34:10Z",
+    "bytes": 129096468,
+    "sha256": "6952102644d5561b3074b73d549ba12dd49cc7f21847ffad0336eee5b39a65ae"
+  },
+  "extract_prefixes": [
+    "binl64/",
+    "h/",
+    "lib386/linux/",
+    "lh/"
+  ],
+  "extract_files": [
+    "license.txt",
+    "readme.txt",
+    "lib386/noemu387.lib",
+    "lib386/emu387.lib",
+    "lib386/math387r.lib",
+    "lib386/math3r.lib",
+    "lib386/math387s.lib",
+    "lib386/math3s.lib",
+    "lib386/cplx73r.lib",
+    "lib386/cplx3r.lib",
+    "lib386/cplx73s.lib",
+    "lib386/cplx3s.lib",
+    "lib386/plbx3r.lib",
+    "lib386/plib3r.lib",
+    "lib386/plbx3s.lib",
+    "lib386/plib3s.lib"
+  ],
+  "required_files": [
+    "binl64/wcc",
+    "binl64/wcc386",
+    "binl64/wcl386",
+    "binl64/wmake",
+    "binl64/wlink",
+    "binl64/wdis",
+    "h/stdio.h",
+    "lib386/linux/clib3r.lib",
+    "license.txt",
+    "lib386/emu387.lib",
+    "lib386/math387r.lib",
+    "lh/stdio.h"
+  ],
+  "scope": "The 16-bit compiler emits original freestanding scalar C modules. The 32-bit tools and Linux libraries build SDK host tools. This is not a claim that the Watcom DOS C runtime or modern GEOS C wrappers run on GEOS 1.x."
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "pcgeos1-toolchain-integration-v1",
+  "host": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "passed": true,
+  "fresh_install": true,
+  "offline_exact_archives": true,
+  "source_locks": [
+    "toolchains/open-watcom.lock.json",
+    "toolchains/freegeos.lock.json",
+    "toolchains/nasm.lock.json"
+  ],
+  "watcom": {
+    "archive_sha256": "6952102644d5561b3074b73d549ba12dd49cc7f21847ffad0336eee5b39a65ae",
+    "installer_executed": false,
+    "extracted_file_count": 1057
+  },
+  "freegeos": {
+    "source_archive_sha256": "d40b28a6d74e8279e0c349308d3e93b96b3ff6866bed5cb9601c88ac0051c123",
+    "patch_sha256": "aed8ffb46f27d3cc19acb5b027558d4c1d7b3ac9aa2ea1f981ee2164c74ad740",
+    "binary_sha256": {
+      "esp": "cf50f9109f1120ca9f3774b80e08a060c3b54f2dcc18f0d1098d5e0c6946362b",
+      "glue": "7da49ad0b795a1982d47927d4c4430866813098babe6b4f008a2f33b9b23d666"
+    }
+  },
+  "nasm": {
+    "version": "3.02",
+    "archive_sha256": "87336eba53b4acfe917424ab5d500d2b0054d9f5148d35c2273ccf2cfb712f0d",
+    "binary_sha256": {
+      "nasm": "58c155687c9131c188fa1d516ad6ec37d589abaf52512f4f89f00cbbbb3d4433",
+      "ndisasm": "27c000ad76a734f8990916bdf6ec4b6c15b4968a603ee25f21b5d0600f73f83e"
+    },
+    "smoke_test": {
+      "flat_8086_code_hex": "b83412cb",
+      "later_instruction_rejected": true
+    }
+  },
+  "limits": [
+    "Recorded Linux x86-64 host only; WSL/macOS and GUI IDE installation are documented routes, not separately exercised hosts.",
+    "Reconstruction installs host tools; it does not install a GEOS runtime or a full historical 1.x API."
+  ]
+}

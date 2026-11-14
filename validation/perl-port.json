@@ -1,0 +1,47 @@
+{
+   "all_five_rebuilt_samples_identical" : true,
+   "date" : "2026-11-14",
+   "graphical_ide_installation_tested" : false,
+   "host_assertions" : 719,
+   "host_c_scalar_cases" : 196608,
+   "linked_instruction_cases" : 139440,
+   "native_evidence" : "native-ensemble12.json records prior execution of identical five binaries; this port was checked through rebuild identity and Perl host tests",
+   "native_geos_retested_during_port" : false,
+   "perl" : "v5.40.1",
+   "python_runtime_required" : false,
+   "python_source_files_in_distribution" : 0,
+   "rebuilt_samples" : [
+      {
+         "bytes" : 354,
+         "identical_to_native_tested_sample" : true,
+         "name" : "G1MATH.GEO",
+         "sha256" : "412f1bdd923f5889f051fe7e31df88007b366a02fc41ec87fc75a67fa0dbc302"
+      },
+      {
+         "bytes" : 370,
+         "identical_to_native_tested_sample" : true,
+         "name" : "G1MATHC.GEO",
+         "sha256" : "ccc9fd0eaf4bb064d6fbb70ec6a5e5e7dfa12ec791c58286a76157ab7b2bb690"
+      },
+      {
+         "bytes" : 436,
+         "identical_to_native_tested_sample" : true,
+         "name" : "G1MIXED.GEO",
+         "sha256" : "ae54fc5fafd859d4e996375a48d9dbbe8457bbff7b09d48a73458df22eb19e11"
+      },
+      {
+         "bytes" : 1668,
+         "identical_to_native_tested_sample" : true,
+         "name" : "G1HELLO.GEO",
+         "sha256" : "5be45e9c4cb9991e84496a3c4994080b7e2cb974012948de6b2660534ebe3d8d"
+      },
+      {
+         "bytes" : 1938,
+         "identical_to_native_tested_sample" : true,
+         "name" : "G1PROBE.GEO",
+         "sha256" : "754224f270310325738b74e538a621cca6cbcc09b69b105e6e6d57f4c4dbb828"
+      }
+   ],
+   "schema" : "pcgeos1-perl-port-v1",
+   "sdk" : "0.2.0"
+}

@@ -1,0 +1,17 @@
+{
+   "checked_at_utc" : "2026-11-14",
+   "host" : "Linux x86-64",
+   "isolated_extract_builds_verified" : true,
+   "isolated_host_test_assertions" : 719,
+   "isolated_host_tests_passed" : true,
+   "isolated_test_files" : 12,
+   "note" : "The public Perl source ZIP was extracted separately; all five samples rebuilt with the fresh Perl-installed pinned tools and matched the native-test sample hashes. All source manifest hashes and ZIP CRCs passed. Final artifact hash is recorded externally to avoid circular hashing. Only this packaging record changed after isolated validation.",
+   "perl" : "v5.40.1",
+   "python_source_files" : 0,
+   "rebuilt_native_files" : 5,
+   "rebuilt_outputs_identical" : true,
+   "schema" : "pcgeos1-release-check-v2",
+   "sdk" : "0.2.0",
+   "source_manifest_verified" : true,
+   "source_zip_crc_verified" : true
+}

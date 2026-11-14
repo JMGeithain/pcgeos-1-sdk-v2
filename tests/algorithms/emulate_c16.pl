@@ -1,0 +1,2 @@
+#!/usr/bin/env perl
+use strict;use warnings;use FindBin;use lib "$FindBin::Bin/../../tools/lib",$FindBin::Bin;use Getopt::Long qw(GetOptions);use SampleCheck qw(verify_object write_report);my($object,$report);GetOptions('object=s'=>\$object,'report=s'=>\$report)or die 'Invalid options';die 'Usage: perl emulate_c16.pl --object FILE [--report FILE]' unless defined $object;eval{write_report(verify_object($object),$report);1}or do{print STDERR $@;exit 1};

@@ -1,0 +1,2397 @@
+{
+  "schema": "pcgeos1-supplied-file-audit-v1",
+  "target_id": "supplied-ensemble12-622.3-ui693.0",
+  "runtime_tested": false,
+  "proprietary_bytes_included": false,
+  "files": [
+    {
+      "path": "DOCUMENT/TETRIS.GEO",
+      "name": "tetris",
+      "sha256": "27d6e36912895214c5f018c9c9230b423140ad4e37e41913ee547a149d0d872a",
+      "bytes": 22518,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 18,
+      "import_count": 3,
+      "export_count": 5
+    },
+    {
+      "path": "SYSAPPL/BANNERGC.GEO",
+      "name": "banner",
+      "sha256": "a8fce8fb38427cecf72ab02e4bd1c8747526fc1fa519227a9a6b35861170d1a1",
+      "bytes": 22002,
+      "protocol": [
+        502,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 15,
+      "import_count": 2,
+      "export_count": 1
+    },
+    {
+      "path": "SYSAPPL/CALCGCM.GEO",
+      "name": "calc",
+      "sha256": "98db878461e697b0c96d4e2aed0e143b8a794e5515517a33b004be47be40e519",
+      "bytes": 14900,
+      "protocol": [
+        505,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 13,
+      "import_count": 1,
+      "export_count": 5
+    },
+    {
+      "path": "SYSAPPL/DESKTOPG.GEO",
+      "name": "filecab",
+      "sha256": "b11262d0c3348502d30b8750b351981f11b6ae61e6639799c240a41903873596",
+      "bytes": 95588,
+      "protocol": [
+        523,
+        1
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 51,
+      "import_count": 1,
+      "export_count": 15
+    },
+    {
+      "path": "SYSAPPL/GEODEXGC.GEO",
+      "name": "geodex",
+      "sha256": "077c67d7119164a7fc09b9921df199afcf74f2f07cc202587852f137d1cd6052",
+      "bytes": 55686,
+      "protocol": [
+        517,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 59,
+      "import_count": 2,
+      "export_count": 3
+    },
+    {
+      "path": "SYSAPPL/GEOPLANG.GEO",
+      "name": "geoplann",
+      "sha256": "7302861f24d7f9da2b9985123c0619dca65b1e51c26f140b08a803e822868d98",
+      "bytes": 45026,
+      "protocol": [
+        523,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 32,
+      "import_count": 3,
+      "export_count": 12
+    },
+    {
+      "path": "SYSAPPL/NOTEPADG.GEO",
+      "name": "notepad",
+      "sha256": "fd075e1825f9384e471843ede5561039c90950e588cf63487f71324197be86ea",
+      "bytes": 11308,
+      "protocol": [
+        503,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 16,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "SYSAPPL/SETUP.GEO",
+      "name": "setup",
+      "sha256": "1c0f32ae49e19f89d5297e962628c79496ba1202fe1a24617b3a7829048f55f1",
+      "bytes": 27128,
+      "protocol": [
+        106,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 8,
+      "import_count": 4,
+      "export_count": 8
+    },
+    {
+      "path": "SYSAPPL/SOLIGCM.GEO",
+      "name": "klondike",
+      "sha256": "fa8d31fcddc78fd4db425eb730ada26da940b5943212dea298a7636b7164423c",
+      "bytes": 16398,
+      "protocol": [
+        107,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 13,
+      "import_count": 2,
+      "export_count": 4
+    },
+    {
+      "path": "SYSAPPL/WELCOME.GEO",
+      "name": "welcome",
+      "sha256": "86aef0abdff8e631eb3bf0c2beca7a6c16afb2254082a1201b75a33495bc5cea",
+      "bytes": 206272,
+      "protocol": [
+        520,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 85,
+      "import_count": 3,
+      "export_count": 16
+    },
+    {
+      "path": "SYSTEM/ABSGEN.GEO",
+      "name": "absgen",
+      "sha256": "509a8f335b0fed40d3c5a7d8dbf954f75fe1364bb4e6fed1a6066e7bdb057f0d",
+      "bytes": 1268,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/ATT6300.GEO",
+      "name": "att6300",
+      "sha256": "493f873e5486ba0ad81d8d1aaf9d10359ed10c09a277a1cb36e401c23b58efd3",
+      "bytes": 14734,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/CANON48.GEO",
+      "name": "canon48",
+      "sha256": "8a905330026d3a9b16a0b60a1a722ca7a3f84166e3c16cec04e6d91e5638441b",
+      "bytes": 4174,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 8,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/CARDS.GEO",
+      "name": "cards",
+      "sha256": "6be939d0d6761d2669d353b733eb724781f055f7772b6d9e0ab4355ec1b6161d",
+      "bytes": 10504,
+      "protocol": [
+        106,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 10
+    },
+    {
+      "path": "SYSTEM/CGA.GEO",
+      "name": "cga",
+      "sha256": "0c1fe78035241e40378906a9b3e073caa4a5e06ee15e7987262afe4bfc6d2f1e",
+      "bytes": 15614,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/CITOH9.GEO",
+      "name": "citoh9",
+      "sha256": "4d1153f4ddde53f263a3015629304b09207da6c817629439c9c9cf508a109424",
+      "bytes": 4006,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 8,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DBASE.GEO",
+      "name": "dbase",
+      "sha256": "209d45d361cff3daeb982c07d8faa4fbd3b7f86b4fbba1d18a54a78b44ed12cd",
+      "bytes": 2930,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 0,
+      "export_count": 23
+    },
+    {
+      "path": "SYSTEM/DESKJET.GEO",
+      "name": "deskjet",
+      "sha256": "e421f415f8d77b57c91d3c6f9fb3cd50e5cb14fcfc062d722eb5815aa54d74b7",
+      "bytes": 3100,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DISK.GEO",
+      "name": "disk",
+      "sha256": "6363699f0b9af45106b59e432f3b715f4e9c38d5e5c07a45fcce660f3f964be9",
+      "bytes": 910,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DOS2.GEO",
+      "name": "dos2",
+      "sha256": "c452ed3f1d3003ffb993b69ab426b8a1daf61f83e7edd7d30d7d8da31c24129e",
+      "bytes": 3356,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DOS3.GEO",
+      "name": "dos3",
+      "sha256": "911a6803828c34b72491c7708e1939978ec3a377d23df95e2f4c73a93e8db36a",
+      "bytes": 3996,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DOS4.GEO",
+      "name": "dos4",
+      "sha256": "9f8dfee34f9be9d1952b264e7bbad2b3b13c22146e2c6b7d841a7278aa8557e2",
+      "bytes": 3712,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DOS5.GEO",
+      "name": "dos5",
+      "sha256": "2b74f591044a5fa02b3a585c7c0392410096e5cd3bd7dd1b1c9d23e7cd7b6a23",
+      "bytes": 6312,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/DRDOS.GEO",
+      "name": "drdos",
+      "sha256": "d83bdffcf09ec9f881859f444c95473601fa0ce5489b38d5a1c37116d15f0d32",
+      "bytes": 3416,
+      "protocol": [
+        201,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EGA.GEO",
+      "name": "ega",
+      "sha256": "c81f69847fb2b4fbc1772c6d63e06d06cf97b7b384d7137a50493550bfb689c7",
+      "bytes": 17142,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EMM.GEO",
+      "name": "emm",
+      "sha256": "3a6ec54447fa3a2bbc376271813430466ed0f64fb05a494809e03cb099746ba9",
+      "bytes": 2148,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EPMX9.GEO",
+      "name": "epmx9",
+      "sha256": "7b366717c033fadd2067bfaea094394a51aa01f63ee502c626365a32e3da6039",
+      "bytes": 3880,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EPRX9.GEO",
+      "name": "eprx9",
+      "sha256": "5dfbeb761b93ca235da4e6f7c89e6f71e64fe90f7bbb570132e361096dd4f7d0",
+      "bytes": 4104,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EPSHI24.GEO",
+      "name": "epshi24",
+      "sha256": "3c47faf3b3b30bf0a2a461931bfad0b4bf40dc5d9837f40ac97c09573f70ed9c",
+      "bytes": 5366,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 8,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EPSON24.GEO",
+      "name": "epson24",
+      "sha256": "c1ddae5274dae05cce69c2313b1b155cd863074a744d5755a00f4875d50129b5",
+      "bytes": 7332,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 11,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EPSON9.GEO",
+      "name": "epson9",
+      "sha256": "d8caef130d08811c4340ae74f3c0f7bce74553d5a92ee614594249326663a74a",
+      "bytes": 11150,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 16,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/EXTMEM.GEO",
+      "name": "extMem",
+      "sha256": "0ad7decdf39ae7d4be43c73d811caff8cdb851d507041cef30cbc08ce4518540",
+      "bytes": 1528,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/FLOAT.GEO",
+      "name": "float",
+      "sha256": "f7d8ad5adb3d7b1191710c786e4a6948a51a054528d5839b503a65da9949ddb1",
+      "bytes": 13262,
+      "protocol": [
+        2,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 0,
+      "export_count": 93
+    },
+    {
+      "path": "SYSTEM/GENMOUSE.GEO",
+      "name": "genmouse",
+      "sha256": "6015357d59f5e0308035e0e06c19956acc4b888b6952eedd10d26374793595e5",
+      "bytes": 1404,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/GROBJ.GEO",
+      "name": "grobj",
+      "sha256": "ab82bbfd21a79e9bd6bf932aa43da2ebe1313e23c97b2a0d1d21ecce8d6e4e77",
+      "bytes": 42922,
+      "protocol": [
+        507,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 20,
+      "import_count": 1,
+      "export_count": 21
+    },
+    {
+      "path": "SYSTEM/HGC.GEO",
+      "name": "hgc",
+      "sha256": "91e0878829dca8ebdff49d096acb1509bfe602b5978872ce5e4bc0139c2d03a4",
+      "bytes": 15330,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/IM.GEO",
+      "name": "im",
+      "sha256": "d24abc714ee00cd8fb5fd53c8ced5d5b10f099b4c4a106e2121cc572bcc2c5e5",
+      "bytes": 4700,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 0,
+      "export_count": 24
+    },
+    {
+      "path": "SYSTEM/IMPORT.GEO",
+      "name": "import",
+      "sha256": "e8e21bc9b0186cf5dc21eda3efd53f2d2fdcd4536ede0d266a088d4528dfbbf5",
+      "bytes": 9238,
+      "protocol": [
+        502,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 11,
+      "import_count": 2,
+      "export_count": 3
+    },
+    {
+      "path": "SYSTEM/KBD.GEO",
+      "name": "kbd",
+      "sha256": "b5c3ca8738a8b335345bdc04088f430982cf58ca8ddd827300538ce527b5a375",
+      "bytes": 4388,
+      "protocol": [
+        501,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDB_CF.GEO",
+      "name": "kbdb_cf",
+      "sha256": "3be633d9ea0737a3d052756c6eb48c96f635acb3db9579aa478e0d2c18ad8133",
+      "bytes": 4404,
+      "protocol": [
+        101,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_BE.GEO",
+      "name": "kbde_be",
+      "sha256": "56c06db990feb85e0888ef95552d3e880ce8f07294d1c9ea3157a65acc8a7528",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_CF.GEO",
+      "name": "kbde_cf",
+      "sha256": "689d423a1a17b9f889564532e7877eb5ec9013cd716604b0eb6749db28a2deef",
+      "bytes": 4404,
+      "protocol": [
+        101,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_DF.GEO",
+      "name": "kbde_df",
+      "sha256": "7788784518ce02eedad90edf428abf560255c15efe3527312583d3cbc71817a2",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_FR.GEO",
+      "name": "kbde_fr",
+      "sha256": "b9525de0331d30e2d1037cc211149dc4cdf8cebba7f8a0381f254c2464b704cd",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_GR.GEO",
+      "name": "kbde_gr",
+      "sha256": "f7d229d8df98e6cfd998448631b6853a28bb811e80f48cb9179b8d0d1e5eb728",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_IT.GEO",
+      "name": "kbde_it",
+      "sha256": "a5e84644a6ff60fa7297652203ab826c342ad5769aca05574df6c084ec2c74d0",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_NO.GEO",
+      "name": "kbde_no",
+      "sha256": "98d4c6015dc8c14964aff6bcd04a16762309f5154edb4b8b1231bcb3ed56a172",
+      "bytes": 4404,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_SF.GEO",
+      "name": "kbde_sf",
+      "sha256": "b2a99966e2a484d8e232cd3a19fac00974133123379feadf51c5214d19c958aa",
+      "bytes": 4404,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_SG.GEO",
+      "name": "kbde_sg",
+      "sha256": "cf406e1bc415a5b441eee4c2c289ebe8c524ed189dde5a47d3be9681b4257d7f",
+      "bytes": 4404,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_SP.GEO",
+      "name": "kbde_sp",
+      "sha256": "9a74f952226562128fbdad0b4acba1d7c1c50bfff0b8ce648db8645907980b48",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_SV.GEO",
+      "name": "kbde_sv",
+      "sha256": "48cace1118c54af0911a179e9a262ef5aee4ecc2c0cab6a189538ef368661af4",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDE_UK.GEO",
+      "name": "kbde_uk",
+      "sha256": "75b24e0dc5cef8019370b8dea3a42652a09dc04f130506ac0aa53305f01725d9",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_DF.GEO",
+      "name": "kbdn_df",
+      "sha256": "d0089310d236fd70320eb63ec7f1f01978e8a8168ca08bdccc43ce6cdc20d7f2",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_FR.GEO",
+      "name": "kbdn_fr",
+      "sha256": "b8e0cec91981df207f9fd845caf05e97f373ae9250666457318b6fb4e0a884c7",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_GR.GEO",
+      "name": "kbdn_gr",
+      "sha256": "f0a9afaafdca528344cca5159455c38928f9238c5b345be70536283a44f709b4",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_IT.GEO",
+      "name": "kbdn_it",
+      "sha256": "83d7563e4c7ab1b7dc99404658dc5d5d7683b4c8897a79a16a963f48ca6bfe13",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_NO.GEO",
+      "name": "kbdn_no",
+      "sha256": "984d5e15c13142a6f8287f22f4ce3963300c68dfe869f75d408fbbc41b42ccad",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_SG.GEO",
+      "name": "kbdn_sg",
+      "sha256": "85a0291f0811792feb71b48a73abe33128c051410c2ff613cb197ff1246c13ba",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_SP.GEO",
+      "name": "kbdn_sp",
+      "sha256": "336002ccddb04198488ee471966fed3b23cbc065994dea9038f1f2f35117f5cf",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_SV.GEO",
+      "name": "kbdn_sv",
+      "sha256": "f8454cbb7a47c9ff1f27cbece5792782e9ac8fa65eaef8237a5e3a57d09cb144",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KBDN_UK.GEO",
+      "name": "kbdn_uk",
+      "sha256": "248e9e9a0ecfa87d23ce0ad83851c881e53816eb0ae7b574c7e696b40e0e1cef",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/KLIB.GEO",
+      "name": "klib",
+      "sha256": "81e4bd6964bd40cb1f4abece2faaa1c17a10ce6d0f0e8d79373064012acfe02e",
+      "bytes": 55398,
+      "protocol": [
+        611,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 42,
+      "import_count": 1,
+      "export_count": 142
+    },
+    {
+      "path": "SYSTEM/KPS1_FR.GEO",
+      "name": "kps1_fr",
+      "sha256": "0f17dc99d191d58bcd815dcad09f6c72200448720a25356e6d2ee07c9571f6d4",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LASDWN5.GEO",
+      "name": "lasdwn5",
+      "sha256": "108009c23cdbbd5886829cd8e7b7a8f92456843e20eaaeb7972ea9b46d34719c",
+      "bytes": 5542,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LASERDWN.GEO",
+      "name": "laserdwn",
+      "sha256": "54ed7784053321e046a50c31c13ac7714c29d39197a579d2e22c1415fa7b6719",
+      "bytes": 5374,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LASERJET.GEO",
+      "name": "laserjet",
+      "sha256": "7de68c1447bdbf98df0488bc0c4c9dfd97300f6e3edad70dda741f9c61f71072",
+      "bytes": 3428,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LASERPLS.GEO",
+      "name": "laserpls",
+      "sha256": "2fc34c458a6af94bd50cc8193f4afa739655bfd315196c86c97c7ef36c12858f",
+      "bytes": 3792,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LBP.GEO",
+      "name": "lbp",
+      "sha256": "b55d66c6fc9323bbb4d2ba712843b3231c25e4542b60bab569c842999b421c23",
+      "bytes": 3636,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LOCAL.GEO",
+      "name": "local",
+      "sha256": "7a7376e225c0afb0fc0384409a583da62ae8a20275c96e9faef9bff1edf58b5f",
+      "bytes": 10854,
+      "protocol": [
+        2,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 23,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LOGIBUS.GEO",
+      "name": "logiBus",
+      "sha256": "570e3f9fc39d2da8f95fcbdfbf16c610b3f97ff187a05d48322118beb9964a00",
+      "bytes": 1604,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/LOGISER.GEO",
+      "name": "logiSer",
+      "sha256": "c0ed00b84ecbed5af4ff579227d0b746e49282835fa716fe19886e7c409aae0c",
+      "bytes": 1898,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/MCGA.GEO",
+      "name": "mcga",
+      "sha256": "86c6217e7f258ae7b7f07936cd02f47a0d0b043141623b68df44fbfcd18a34ee",
+      "bytes": 14430,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/MEGA.GEO",
+      "name": "mega",
+      "sha256": "567cf5add4dfdede8fea22448fc35e0a32ce6526afb28f5d35db5927217bbbb9",
+      "bytes": 18366,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/MOTIF.GEO",
+      "name": "motif",
+      "sha256": "17e942b2107fa6c3334464d6a255b68a40bf1de9d0cbe4755175b83faa327482",
+      "bytes": 129698,
+      "protocol": [
+        693,
+        1
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 50,
+      "import_count": 3,
+      "export_count": 27
+    },
+    {
+      "path": "SYSTEM/MSBUS.GEO",
+      "name": "msBus",
+      "sha256": "7ee0840876fca8acf869d18732c04849333d2c8d02e1b447adbd202f00a1c024",
+      "bytes": 1404,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/MSSER.GEO",
+      "name": "msSer",
+      "sha256": "e830c7a111afc244ffd793239f751a695a4683a492b0b0f4f7e437cb11fda98d",
+      "bytes": 2886,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/MSYS.GEO",
+      "name": "mSys",
+      "sha256": "f590890af12fe6d5bd5b5906c59adb981c3e9d095972e8ded10d1bed41202990",
+      "bytes": 2674,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/NEC24.GEO",
+      "name": "nec24",
+      "sha256": "d5783b39d53ea5b3d1f85142c09fe6799d60961ba547dc60eae4a43a98a90058",
+      "bytes": 4312,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/NIMBUS.GEO",
+      "name": "nimbus",
+      "sha256": "4141b5fa403e4d1aa72e231eca2d8dd9f528fc4cfe0bdf07c43d932f36326d0f",
+      "bytes": 8390,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/OKI9.GEO",
+      "name": "oki9",
+      "sha256": "d5d67a999ac31fc805af1b4492ab4b05b2601be0f5f962969e4850545d42dffd",
+      "bytes": 3420,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/OPTIONS.GEO",
+      "name": "options",
+      "sha256": "18bbeb488eefef3331f719f324db151d8d66f16b0e51923f09ba24825b6a3977",
+      "bytes": 2368,
+      "protocol": [
+        3,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 1,
+      "export_count": 6
+    },
+    {
+      "path": "SYSTEM/PARALLEL.GEO",
+      "name": "parallel",
+      "sha256": "ec61e61b66ea9ca178b5eea6e1819253a9bec38f99678e3c1e1aaa96a69fa514",
+      "bytes": 3718,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/PPDS24.GEO",
+      "name": "ppds24",
+      "sha256": "8ec4ca4f6df94c2bf780d927997dbf5cc27ae9003bc24b15c48978a78df6e589",
+      "bytes": 4396,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/PROP9.GEO",
+      "name": "prop9",
+      "sha256": "4db53c9713db052caa44cf30305c26e844c88a40b895394be9c71ba823155944",
+      "bytes": 10290,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 10,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/PROPX24.GEO",
+      "name": "propx24",
+      "sha256": "20a08863323ee0f6c9c447c7eeb162e568e447961f1496169fed7710f62ffd51",
+      "bytes": 5320,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/PS.GEO",
+      "name": "ps",
+      "sha256": "70253c0a68e02fb82010769d4bfea73f7e7540624d42095f25668db7ef30574f",
+      "bytes": 32100,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 19,
+      "import_count": 1,
+      "export_count": 12
+    },
+    {
+      "path": "SYSTEM/PS2.GEO",
+      "name": "ps2",
+      "sha256": "6c433e5c574aa57a97c2561dd79888fa459f351cf055accd8bde4fe325ce5cef",
+      "bytes": 1514,
+      "protocol": [
+        602,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/PSCRIPT.GEO",
+      "name": "pscript",
+      "sha256": "bc0aa138d50be38037d7d6a78e23866687111053c568996a4de99cd162fbe3c3",
+      "bytes": 11890,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 21,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/QEPS.GEO",
+      "name": "qeps",
+      "sha256": "61c624f429fd035b0eb1a725aaf201227e1eeec70d00048d9f5f9086c7c7f275",
+      "bytes": 7516,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 5
+    },
+    {
+      "path": "SYSTEM/QUIETJET.GEO",
+      "name": "quietjet",
+      "sha256": "53a15a046368517731ebade79dd4148116bc2233603e5aadf005d418ec71ee0a",
+      "bytes": 2818,
+      "protocol": [
+        0,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 6,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S08_1024.GEO",
+      "name": "vga8",
+      "sha256": "9d806a277461e76305e6e9db87e7943b1cf93ab2c04ddd29c841166bb9e1fed0",
+      "bytes": 62412,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S08_1280.GEO",
+      "name": "vga8",
+      "sha256": "6f6bb4b0cb5beace1156450fac3ae3355c3343b3e0c40be29cb50cbf7334cf4e",
+      "bytes": 62412,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S08_640.GEO",
+      "name": "vga8",
+      "sha256": "dbc9340f75d5b7b72d4f4502192e831e9ef96d85ecfa532f49e8cb549eeebad8",
+      "bytes": 62412,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S08_800.GEO",
+      "name": "vga8",
+      "sha256": "2651453514b10ca0e894c994e0c6920cb1af103b0bb443474f1093bf616d28f3",
+      "bytes": 62412,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S15_1024.GEO",
+      "name": "vga15",
+      "sha256": "a1c375fff2bdadc42a9aa8c42991c0733c827e5cd5afe10b75635f3d957d6190",
+      "bytes": 27330,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S15_1280.GEO",
+      "name": "vga15",
+      "sha256": "7f77b0b2f3183baeed5383f96f1121e415745009688b27ceb5ae4cc310266307",
+      "bytes": 27330,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S15_640.GEO",
+      "name": "vga15",
+      "sha256": "44e5d2828f65da6b4a5f882ec80ac69d4c3744c4d5417c57547d22c96f2903da",
+      "bytes": 27330,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S15_800.GEO",
+      "name": "vga15",
+      "sha256": "ea6af0b9b49f995b84dadf2ef86089e39e05854d9d6732f384fd1a7a9f6b64e2",
+      "bytes": 27330,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S16_1024.GEO",
+      "name": "vga16",
+      "sha256": "5dbd541080b4c767fa2ddb42a0c525d20fe66f121df697f388d1578046dc8b29",
+      "bytes": 28754,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S16_1280.GEO",
+      "name": "vga16",
+      "sha256": "5c56db2b0c39ac66e7448a672a68c8722876b547c7822a006cd31da26f98654d",
+      "bytes": 28754,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S16_640.GEO",
+      "name": "vga16",
+      "sha256": "5a4c3950c0731727e6bdd9eb4e076136991365d90a71a5a7ba894c403e773b29",
+      "bytes": 28754,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S16_800.GEO",
+      "name": "vga16",
+      "sha256": "1648f6adbe0b2a0b976644e7cac7a56df4ec2d30c6cd0261c04231d524b42901",
+      "bytes": 28754,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S24_1024.GEO",
+      "name": "vga24",
+      "sha256": "01b40631d9d817cd1b2015bb693735531de933a960c4bc710bb54775482a2672",
+      "bytes": 27946,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S24_1280.GEO",
+      "name": "vga24",
+      "sha256": "19d2ca030ef741d6b4e34e14d416ef59682e57a1c38b00b5baf22566f639f515",
+      "bytes": 27946,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S24_640.GEO",
+      "name": "vga24",
+      "sha256": "e38a8e81d34eed0f6b2f9f7185b1cdf899a769e75b829d8c5fe1a27e1dd828ab",
+      "bytes": 27946,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/S24_800.GEO",
+      "name": "vga24",
+      "sha256": "5af9a80b7300c8da8a3bea2e0eb4d24010558378c1924dbc512c88c60bf176ac",
+      "bytes": 27946,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/SERIAL.GEO",
+      "name": "serial",
+      "sha256": "8f73b92f0a53e4d6bc36b1d914a0fc529237314376409662c2f6c469883bdfda",
+      "bytes": 4240,
+      "protocol": [
+        604,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/SOUND.GEO",
+      "name": "sound",
+      "sha256": "c454b8d3f9cc7d8bd3002a968c498b836fa1c408c07e99855c2c1d522d62ea33",
+      "bytes": 1212,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 2
+    },
+    {
+      "path": "SYSTEM/SPELL.GEO",
+      "name": "spell",
+      "sha256": "be2df7b67982363207b320722d80de9bc77e73d0a3708f28409c2a25e650e50d",
+      "bytes": 104658,
+      "protocol": [
+        2,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 33,
+      "import_count": 0,
+      "export_count": 11
+    },
+    {
+      "path": "SYSTEM/SPOOL.GEO",
+      "name": "spool",
+      "sha256": "e272c6e44824548e354ffb2abd72c80108e3c5963b93812f340001616b3edbf9",
+      "bytes": 43536,
+      "protocol": [
+        613,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 29,
+      "import_count": 1,
+      "export_count": 17
+    },
+    {
+      "path": "SYSTEM/STAR9.GEO",
+      "name": "star9",
+      "sha256": "31c54a543b45315f3939efeeebc9c0091adc6de37323902d8395266a3fd9a724",
+      "bytes": 3960,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/STREAM.GEO",
+      "name": "stream",
+      "sha256": "7632772554b8d6c5c7bb08d5c94f399de34de81674179ea2f8842d312a3f281c",
+      "bytes": 2410,
+      "protocol": [
+        503,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 4
+    },
+    {
+      "path": "SYSTEM/SVGA8004.GEO",
+      "name": "svga8004",
+      "sha256": "a0c0717c10b0d6fbbc810228a267b6818b51f35f95269141dd0410bcf4fd5105",
+      "bytes": 18934,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/SWAP.GEO",
+      "name": "swap",
+      "sha256": "4c03a7425a447f2301fa068e92b1dc5d75aa99a95800ad281693c4319454191b",
+      "bytes": 1068,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 4,
+      "import_count": 0,
+      "export_count": 6
+    },
+    {
+      "path": "SYSTEM/T1000.GEO",
+      "name": "t1000",
+      "sha256": "594305e6b32892b228446c3af84962fe97f64e1c9ed94d89e83ea03f416e56b6",
+      "bytes": 4388,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/TASKMAX.GEO",
+      "name": "taskmax",
+      "sha256": "9da34faa6d74440039bf3256e92c4b244ae7782bc314e65778cc60e56f609d98",
+      "bytes": 11478,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 2,
+      "export_count": 3
+    },
+    {
+      "path": "SYSTEM/TOSH24.GEO",
+      "name": "tosh24",
+      "sha256": "614ef882f5746d78759d80f8e988b3cc65273ce8e7585a68bdcb3ac45c5224e0",
+      "bytes": 3916,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 7,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/UI.GEO",
+      "name": "ui",
+      "sha256": "47366c60fc4f3195e9a40eaeb805af505ec8885293064e9bc8c1b2033e941f77",
+      "bytes": 87756,
+      "protocol": [
+        693,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 28,
+      "import_count": 2,
+      "export_count": 262
+    },
+    {
+      "path": "SYSTEM/VGA.GEO",
+      "name": "vga",
+      "sha256": "b97a6cf1aa2f29a1adc41adc5d2f6a5ad3947628359267a770583967a057206a",
+      "bytes": 17062,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/VIDMEM.GEO",
+      "name": "vidmem",
+      "sha256": "6a19c8bb1d5c380665f4b7f9a0496641a3c6aae1beec13c3d2f9fd86e3f890e0",
+      "bytes": 11550,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 5,
+      "import_count": 0,
+      "export_count": 0
+    },
+    {
+      "path": "SYSTEM/XMS.GEO",
+      "name": "xms",
+      "sha256": "3b289c5b16fed7c66d42d10cb002f56bdd8f5ec2231bdd4707b45eb5ba1f2df6",
+      "bytes": 1668,
+      "protocol": [
+        601,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 3,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "WORLD/BANNER.GEO",
+      "name": "banner",
+      "sha256": "b419547bc69188f0826c1ef49af5036aed497910dfc1988da5edc59f7872fefe",
+      "bytes": 11480,
+      "protocol": [
+        502,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 14,
+      "import_count": 2,
+      "export_count": 2
+    },
+    {
+      "path": "WORLD/CALC.GEO",
+      "name": "calc",
+      "sha256": "076b690ab650e538c04a990714e64e1899ef7fc45a0bf7413cb3551a3d7f45dd",
+      "bytes": 14534,
+      "protocol": [
+        505,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 14,
+      "import_count": 1,
+      "export_count": 5
+    },
+    {
+      "path": "WORLD/DESKTOP.GEO",
+      "name": "desktop",
+      "sha256": "5be0813298a91bdf250c154f7f708511ccd70784f6e42f6b0e23095f7c75a4c3",
+      "bytes": 99026,
+      "protocol": [
+        523,
+        1
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 52,
+      "import_count": 1,
+      "export_count": 15
+    },
+    {
+      "path": "WORLD/DRAW.GEO",
+      "name": "draw",
+      "sha256": "1e35cc9b1a78f5f93e50ac0c717af49e467d79603870b6dd7169aa0c1d0766bd",
+      "bytes": 78936,
+      "protocol": [
+        509,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 32,
+      "import_count": 4,
+      "export_count": 6
+    },
+    {
+      "path": "WORLD/EXTRAS/BOUNCE.GEO",
+      "name": "bounce",
+      "sha256": "698aa8a78568bccbea7b81709a9777e4bc34cdff0de03418f8f9f5789bf83393",
+      "bytes": 3572,
+      "protocol": [
+        101,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 11,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "WORLD/EXTRAS/DUMP.GEO",
+      "name": "dump",
+      "sha256": "8ce6cef629f4bfa40ecabb6f40f0e3a41ab1c3eb9ae60f77a53eb211f9f67c8f",
+      "bytes": 24408,
+      "protocol": [
+        607,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 19,
+      "import_count": 3,
+      "export_count": 2
+    },
+    {
+      "path": "WORLD/EXTRAS/NINFNT.GEO",
+      "name": "ninfnt",
+      "sha256": "949f9aa4b4c880df62c076e5689d21051f87ce9ab35e5341074ef1eafcc6df83",
+      "bytes": 14978,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 20,
+      "import_count": 1,
+      "export_count": 2
+    },
+    {
+      "path": "WORLD/EXTRAS/PERF.GEO",
+      "name": "perf",
+      "sha256": "959cb4165c9d4d79ce4c7eff77ffe88e9ee77612e788b9690ba2a89ef77cfa36",
+      "bytes": 17318,
+      "protocol": [
+        1,
+        1
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 20,
+      "import_count": 1,
+      "export_count": 1
+    },
+    {
+      "path": "WORLD/EXTRAS/SPINTEXT.GEO",
+      "name": "spintext",
+      "sha256": "848f5afb43a2184b01d2a4ad3231957b6ab9936006b23b4b2a260d1224d44370",
+      "bytes": 3748,
+      "protocol": [
+        201,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 11,
+      "import_count": 1,
+      "export_count": 0
+    },
+    {
+      "path": "WORLD/GEODEX.GEO",
+      "name": "geodex",
+      "sha256": "17783a152b6cb2af12b47fd5dffffe5859487c3dd1919fcbe9c46195de47805f",
+      "bytes": 53400,
+      "protocol": [
+        517,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 59,
+      "import_count": 3,
+      "export_count": 3
+    },
+    {
+      "path": "WORLD/GEOPLAN.GEO",
+      "name": "geoplann",
+      "sha256": "54491694a0cdc2b5cbc5f3940eec98c103bfdbae6d696f8076992ca9e025c804",
+      "bytes": 57890,
+      "protocol": [
+        523,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 32,
+      "import_count": 3,
+      "export_count": 14
+    },
+    {
+      "path": "WORLD/NOTEPAD.GEO",
+      "name": "notepad",
+      "sha256": "edc48848ff4b9d2880e715bbb29532f14b3b54293c45159c467e33e2af841d1b",
+      "bytes": 7834,
+      "protocol": [
+        503,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 15,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "WORLD/PREFMGR.GEO",
+      "name": "prefmgr",
+      "sha256": "b058f3c04ffd19c9bd8ba04aa59b1538e3cacc29ec72ad1f26868c275ad38e91",
+      "bytes": 79296,
+      "protocol": [
+        519,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 29,
+      "import_count": 5,
+      "export_count": 28
+    },
+    {
+      "path": "WORLD/SCRAPBK.GEO",
+      "name": "scrapbk",
+      "sha256": "a72a2001d1ca4de5af0045f99a28b1ec74954962d902bde9b4aa07fce5454d9f",
+      "bytes": 15348,
+      "protocol": [
+        107,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 18,
+      "import_count": 2,
+      "export_count": 0
+    },
+    {
+      "path": "WORLD/SOLI.GEO",
+      "name": "klondike",
+      "sha256": "47acdaaeeeec1e02e582457bbb38f3de671e4a2f66d9cd0e305184139d75e3f5",
+      "bytes": 14748,
+      "protocol": [
+        107,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 12,
+      "import_count": 2,
+      "export_count": 4
+    },
+    {
+      "path": "WORLD/TERM.GEO",
+      "name": "term",
+      "sha256": "2d66ac2ff9fd24c4591303b2cba7cec6f40f0d52b4f3d75d9e0cdaa5fc1be542",
+      "bytes": 62566,
+      "protocol": [
+        519,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 32,
+      "import_count": 1,
+      "export_count": 2
+    },
+    {
+      "path": "WORLD/TETRIS.GEO",
+      "name": "tetris",
+      "sha256": "27d6e36912895214c5f018c9c9230b423140ad4e37e41913ee547a149d0d872a",
+      "bytes": 22518,
+      "protocol": [
+        1,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 18,
+      "import_count": 3,
+      "export_count": 5
+    },
+    {
+      "path": "WORLD/VIEWER.GEO",
+      "name": "viewer",
+      "sha256": "3d433a39c455a9cea242763dad0e3f681b4196fb7b1a75a08ca47e1aa8aa4a30",
+      "bytes": 57376,
+      "protocol": [
+        8,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 37,
+      "import_count": 5,
+      "export_count": 17
+    },
+    {
+      "path": "WORLD/WRITE.GEO",
+      "name": "write",
+      "sha256": "f9e56c79cde2ab694dd066fa8d756c11c378af1ea701768c2c18362644de3de7",
+      "bytes": 119894,
+      "protocol": [
+        509,
+        0
+      ],
+      "kernel_protocol_required": [
+        622,
+        3
+      ],
+      "resource_count": 36,
+      "import_count": 3,
+      "export_count": 16
+    }
+  ],
+  "rejected_files": [
+    {
+      "path": "WORLD/PCAO.GEO",
+      "sha256": "92344bf43ea170dafc8fd35aa0838a5aa118d594520c9efad5624650ce379f1f",
+      "reason": "Duplicate release/protocol numbers disagree"
+    }
+  ],
+  "valid_geode_count": 140,
+  "rejected_geode_count": 1
+}

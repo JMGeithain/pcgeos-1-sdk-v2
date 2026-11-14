@@ -1,0 +1,14 @@
+{
+  "schema": "pcgeos1-release-check-v1",
+  "checked_at_utc": "2026-11-14",
+  "host": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "source_zip_crc_verified": true,
+  "source_manifest_verified": true,
+  "isolated_extract_builds_verified": true,
+  "note": "The public source ZIP was extracted into a separate directory, all five samples rebuilt with the pinned installed tools and matched the recorded native-test hashes. Every source manifest hash and ZIP CRC passed. Final artifact hash is external to avoid circular hashing.",
+  "rebuilt_native_files": 5,
+  "rebuilt_outputs_identical": true,
+  "isolated_host_tests_passed": true,
+  "isolated_host_test_count": 132
+}

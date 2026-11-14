@@ -1,0 +1,478 @@
+{
+  "schema": "pcgeos1-observed-abi-subset-v1",
+  "target_id": "supplied-ensemble12-622.3-ui693.0",
+  "scope": "Curated numeric facts and register contracts observed for the supplied target only. Not an exhaustive SDK ABI or current 2.x API.",
+  "runtime_tested": false,
+  "kernel_required_protocol": [
+    622,
+    3
+  ],
+  "ui_required_protocol": [
+    693,
+    0
+  ],
+  "provenance": {
+    "supplied_api_reference": "GNUChess-Ensemble1-MoveEntry/SOURCE/port1/api/ensemble12-api.json",
+    "supplied_api_reference_sha256": "6b3d117e8912636d976931f6b5fa7a63b9186d3f251b41cdc49c8a50b4af672d",
+    "native_abi_notes": "GeoSheet-PCGEOS1-v02/source/spreadsheet/native/objects/NATIVE-ABI-NOTES.md",
+    "independent_wording": true
+  },
+  "kernel_entries": [
+    {
+      "name": "MemAlloc",
+      "module": "kernel",
+      "ordinal_decimal": 0,
+      "register_contract": "AX=bytes; CL=heap flags; CH=allocation flags. BX=allocated handle; locked allocation returns AX=segment. CF indicates failure.",
+      "group": "memory",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x38, matching retained Bounce source",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#memalloc",
+      "register_contract_de": "AX=Bytezahl; CL=Heap-Flags; CH=Allokationsflags. BX erh\u00e4lt den Speicherhandle; bei gesperrter Allokation erh\u00e4lt AX das Segment. CF zeigt einen Fehler an."
+    },
+    {
+      "name": "MemFree",
+      "module": "kernel",
+      "ordinal_decimal": 2,
+      "register_contract": "BX=memory handle.",
+      "group": "memory",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0xaf",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#memfree",
+      "register_contract_de": "BX=Speicherhandle."
+    },
+    {
+      "name": "MemLock",
+      "module": "kernel",
+      "ordinal_decimal": 5,
+      "register_contract": "BX=memory handle; AX=locked segment.",
+      "group": "memory",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x9",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#memlock",
+      "register_contract_de": "BX=Speicherhandle; AX erh\u00e4lt das gesperrte Segment."
+    },
+    {
+      "name": "MemUnlock",
+      "module": "kernel",
+      "ordinal_decimal": 6,
+      "register_contract": "BX=memory handle.",
+      "group": "memory",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x1a",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#memunlock",
+      "register_contract_de": "BX=Speicherhandle."
+    },
+    {
+      "name": "GeodeGetProcessHandle",
+      "module": "kernel",
+      "ordinal_decimal": 149,
+      "register_contract": "BX receives the current process handle.",
+      "group": "geode",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0xd6, retained Bounce source",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#geodegetprocesshandle",
+      "register_contract_de": "BX erh\u00e4lt den Handle des aktuellen Prozesses."
+    },
+    {
+      "name": "GeodeGetResourceHandle",
+      "module": "kernel",
+      "ordinal_decimal": 150,
+      "register_contract": "BX=resource number; BX receives the loaded resource handle.",
+      "group": "geode",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x64, retained Bounce source",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#geodegetresourcehandle",
+      "register_contract_de": "BX=Ressourcennummer; BX erh\u00e4lt den Handle der geladenen Ressource."
+    },
+    {
+      "name": "ObjMessage",
+      "module": "kernel",
+      "ordinal_decimal": 169,
+      "register_contract": "AX=message; BX:SI=destination handle:chunk; CX,DX,BP=message data; DI=message flags.",
+      "group": "object",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2 repeated native sends",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#objmessage",
+      "register_contract_de": "AX=Nachricht; BX:SI=Zielhandle:Chunk; CX, DX, BP=Nachrichtenparameter; DI=Nachrichtenflags."
+    },
+    {
+      "name": "TimerSleep",
+      "module": "kernel",
+      "ordinal_decimal": 184,
+      "register_contract": "AX=number of ticks to yield.",
+      "group": "timer",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "runtime_audit agent Bounce matching retained source",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#timersleep",
+      "register_contract_de": "AX=Anzahl der abzugebenden Zeittakte."
+    },
+    {
+      "name": "GrCreateState",
+      "module": "kernel",
+      "ordinal_decimal": 211,
+      "register_contract": "DI=window handle; DI receives a graphics-state handle.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x141",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grcreatestate",
+      "register_contract_de": "DI=Fensterhandle; DI erh\u00e4lt einen Grafikzustandshandle."
+    },
+    {
+      "name": "GrDestroyState",
+      "module": "kernel",
+      "ordinal_decimal": 212,
+      "register_contract": "DI=graphics-state handle.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x153",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grdestroystate",
+      "register_contract_de": "DI=Grafikzustandshandle."
+    },
+    {
+      "name": "GrDrawRect",
+      "module": "kernel",
+      "ordinal_decimal": 316,
+      "register_contract": "DI=graphics state; AX,BX=left,top; CX,DX=right,bottom.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "TETRIS code2:0x4bd FillRect immediately followed call0x13c; KLIB code35:0x3d repeated box edges",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grdrawrect",
+      "register_contract_de": "DI=Grafikzustand; AX, BX=links, oben; CX, DX=rechts, unten."
+    },
+    {
+      "name": "GrDrawEllipse",
+      "module": "kernel",
+      "ordinal_decimal": 324,
+      "register_contract": "DI=graphics state; AX,BX=left,top; CX,DX=right,bottom.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "KLIB code35:0x37e on new window, rectangle=-100,-100,0,0",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grdrawellipse",
+      "register_contract_de": "DI=Grafikzustand; AX, BX=links, oben; CX, DX=rechts, unten."
+    },
+    {
+      "name": "GrDrawBitmap",
+      "module": "kernel",
+      "ordinal_decimal": 326,
+      "register_contract": "DI=graphics state; AX,BX=position; DS:SI=bitmap; DX:CX=callback, with DX=0 for none.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "MOTIF code12:0x46e; DS=CS SI=0x478 bitmap 12x8, compact0,type0",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grdrawbitmap",
+      "register_contract_de": "DI=Grafikzustand; AX, BX=Position; DS:SI=Bitmap; DX:CX=R\u00fcckruffunktion, bei DX=0 ohne R\u00fcckruf."
+    },
+    {
+      "name": "GrDrawText",
+      "module": "kernel",
+      "ordinal_decimal": 330,
+      "register_contract": "DI=graphics state; AX,BX=position; DS:SI=characters; CX=length, or 0 for NUL termination.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x1db",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grdrawtext",
+      "register_contract_de": "DI=Grafikzustand; AX, BX=Position; DS:SI=Zeichen; CX=L\u00e4nge oder 0 f\u00fcr NUL-Abschluss."
+    },
+    {
+      "name": "GrFillRect",
+      "module": "kernel",
+      "ordinal_decimal": 336,
+      "register_contract": "DI=graphics state; AX,BX=left,top; CX,DX=right,bottom.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x1f5",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grfillrect",
+      "register_contract_de": "DI=Grafikzustand; AX, BX=links, oben; CX, DX=rechts, unten."
+    },
+    {
+      "name": "GrSetLineColor",
+      "module": "kernel",
+      "ordinal_decimal": 346,
+      "register_contract": "DI=graphics state; AH=0 for palette-index mode; AL=palette index.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "KLIB code35:0x362; MOTIF code12:0x48c",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grsetlinecolor",
+      "register_contract_de": "DI=Grafikzustand; AH=0 f\u00fcr Palettenindex-Modus; AL=Palettenindex."
+    },
+    {
+      "name": "GrSetAreaColor",
+      "module": "kernel",
+      "ordinal_decimal": 355,
+      "register_contract": "DI=graphics state; AH=0 for palette-index mode; AL=palette index.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x1e4",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grsetareacolor",
+      "register_contract_de": "DI=Grafikzustand; AH=0 f\u00fcr Palettenindex-Modus; AL=Palettenindex."
+    },
+    {
+      "name": "GrSetAreaMask",
+      "module": "kernel",
+      "ordinal_decimal": 356,
+      "register_contract": "DI=graphics state; AL=system mask index.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "TETRIS code3:0x3de and0x411",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grsetareamask",
+      "register_contract_de": "DI=Grafikzustand; AL=Index einer Systemmaske."
+    },
+    {
+      "name": "GrSetTextColor",
+      "module": "kernel",
+      "ordinal_decimal": 359,
+      "register_contract": "DI=graphics state; AH=0 for palette-index mode; AL=palette index.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x19f",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grsettextcolor",
+      "register_contract_de": "DI=Grafikzustand; AH=0 f\u00fcr Palettenindex-Modus; AL=Palettenindex."
+    },
+    {
+      "name": "GrSetTextStyle",
+      "module": "kernel",
+      "ordinal_decimal": 362,
+      "register_contract": "DI=graphics state; AL=style bits to set; AH=style bits to clear.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x16c, AL0x10 AH0xff",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grsettextstyle",
+      "register_contract_de": "DI=Grafikzustand; AL=zu setzende Stilbits; AH=zu l\u00f6schende Stilbits."
+    },
+    {
+      "name": "GrSetFont",
+      "module": "kernel",
+      "ordinal_decimal": 366,
+      "register_contract": "DI=graphics state; CX=font identifier; DX=whole point size; AH=fractional point size.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x179; TETRIS code2:0x41c uses Berkeley0x0202 at12pt",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grsetfont",
+      "register_contract_de": "DI=Grafikzustand; CX=Schriftkennung; DX=ganzzahliger Teil der Punktgr\u00f6\u00dfe; AH=Bruchteil der Punktgr\u00f6\u00dfe."
+    },
+    {
+      "name": "GrGetWinBounds",
+      "module": "kernel",
+      "ordinal_decimal": 440,
+      "register_contract": "DI=graphics state; AX,BX,CX,DX receive window bounds.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "runtime_audit Bounce/source match",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grgetwinbounds",
+      "register_contract_de": "DI=Grafikzustand; AX, BX, CX, DX erhalten die Fenstergrenzen."
+    },
+    {
+      "name": "GrBeginUpdate",
+      "module": "kernel",
+      "ordinal_decimal": 446,
+      "register_contract": "DI=graphics state. Begin handling an exposed window region.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x146",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grbeginupdate",
+      "register_contract_de": "DI=Grafikzustand. Beginnt die Bearbeitung des neu zu zeichnenden Fensterbereichs."
+    },
+    {
+      "name": "GrEndUpdate",
+      "module": "kernel",
+      "ordinal_decimal": 447,
+      "register_contract": "DI=graphics state. End handling the exposed region.",
+      "group": "graphics",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x14e",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#grendupdate",
+      "register_contract_de": "DI=Grafikzustand. Beendet die Bearbeitung des neu zu zeichnenden Bereichs."
+    },
+    {
+      "name": "ObjCallSuperNoLock",
+      "module": "kernel",
+      "ordinal_decimal": 489,
+      "register_contract": "AX=message; DS:DI=subclass record; other registers follow the message contract.",
+      "group": "object",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "SPINTEXT code2:0x27; retained Bounce source",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#objcallsupernolock",
+      "register_contract_de": "AX=Nachricht; DS:DI=Klassendatensatz der Unterklasse; weitere Register folgen dem Nachrichtenvertrag."
+    },
+    {
+      "name": "FileSetCurrentPath",
+      "module": "kernel",
+      "ordinal_decimal": 51,
+      "register_contract": "BX=disk handle; DS:DX=NUL-terminated path; CF indicates failure.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "NINFNT code5:0xa7 and VIEWER code5:0x72a",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#filesetcurrentpath",
+      "register_contract_de": "BX=Datentr\u00e4gerhandle; DS:DX=NUL-abgeschlossener Pfad; CF zeigt einen Fehler an."
+    },
+    {
+      "name": "FileOpen",
+      "module": "kernel",
+      "ordinal_decimal": 52,
+      "register_contract": "AL=access flags; DS:DX=NUL-terminated path; AX=file handle on success, error on CF.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "VIEWER code5:0x73d AL0xc0; WRITE code2:0x818 AL0xa0",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#fileopen",
+      "register_contract_de": "AL=Zugriffsflags; DS:DX=NUL-abgeschlossener Pfad; AX=Dateihandle bei Erfolg, Fehlercode bei gesetztem CF."
+    },
+    {
+      "name": "FileCreate",
+      "module": "kernel",
+      "ordinal_decimal": 53,
+      "register_contract": "AH=create flags; AL=access flags; CX=DOS attributes; DS:DX=path; AX=handle or CF/error.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "DUMP code4:0x5fc AX0x00c1 CX0; WRITE code2:0x722 AH2 AL0x92",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#filecreate",
+      "register_contract_de": "AH=Erstellungsflags; AL=Zugriffsflags; CX=DOS-Attribute; DS:DX=Pfad; AX=Dateihandle oder Fehlercode bei gesetztem CF."
+    },
+    {
+      "name": "FileClose",
+      "module": "kernel",
+      "ordinal_decimal": 54,
+      "register_contract": "BX=file handle; AL=error policy, 0 recoverable or 80h mandatory; CF indicates failure.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "VIEWER code5:0x785; DUMP code4:0x83e AL0",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#fileclose",
+      "register_contract_de": "BX=Dateihandle; AL=Fehlerbehandlung, 0 behandelbar oder 80h zwingend; CF zeigt einen Fehler an."
+    },
+    {
+      "name": "FileRead",
+      "module": "kernel",
+      "ordinal_decimal": 58,
+      "register_contract": "BX=file handle; CX=requested bytes; DS:DX=buffer; AL=0 recoverable policy; CF indicates incomplete/error; CX=actual bytes for a short transfer.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "NOTEPAD code2:0x29f; VIEWER code5:0x13c8",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#fileread",
+      "register_contract_de": "BX=Dateihandle; CX=gew\u00fcnschte Bytezahl; DS:DX=Puffer; AL=0 f\u00fcr behandelbare Fehler. CF zeigt unvollst\u00e4ndige \u00dcbertragung oder Fehler an; bei kurzer \u00dcbertragung enth\u00e4lt CX die tats\u00e4chliche Bytezahl."
+    },
+    {
+      "name": "FileWrite",
+      "module": "kernel",
+      "ordinal_decimal": 59,
+      "register_contract": "BX=file handle; CX=requested bytes; DS:DX=buffer; AL=0 recoverable policy; CF indicates incomplete/error; CX=actual bytes for a short transfer.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "DUMP code4:0x442/0x460; NOTEPAD code2:0x4ba",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#filewrite",
+      "register_contract_de": "BX=Dateihandle; CX=gew\u00fcnschte Bytezahl; DS:DX=Puffer; AL=0 f\u00fcr behandelbare Fehler. CF zeigt unvollst\u00e4ndige \u00dcbertragung oder Fehler an; bei kurzer \u00dcbertragung enth\u00e4lt CX die tats\u00e4chliche Bytezahl."
+    },
+    {
+      "name": "FilePos",
+      "module": "kernel",
+      "ordinal_decimal": 60,
+      "register_contract": "BX=file handle; CX:DX=signed offset; AL=origin 0=start,1=current, 2=end; DX:AX=resulting position.",
+      "group": "file",
+      "evidence_status": "observed-in-supplied-native-programs; retained-source cross-check where recorded",
+      "reference_evidence": "NOTEPAD code2:0x23b endseek then0x248 startseek",
+      "all_preserved_registers_verified": false,
+      "docs_url": "include/ensemble12/API-EN.md#filepos",
+      "register_contract_de": "BX=Dateihandle; CX:DX=vorzeichenbehafteter Offset; AL=Bezug 0=Anfang, 1=aktuelle Position, 2=Ende. DX:AX enth\u00e4lt die resultierende Position."
+    }
+  ],
+  "ui_classes": [
+    {
+      "name": "GenProcessClass",
+      "ordinal_decimal": 0
+    },
+    {
+      "name": "GenTriggerClass",
+      "ordinal_decimal": 68
+    },
+    {
+      "name": "GenApplicationClass",
+      "ordinal_decimal": 71
+    },
+    {
+      "name": "GenViewClass",
+      "ordinal_decimal": 75
+    },
+    {
+      "name": "GenTextClass",
+      "ordinal_decimal": 86
+    },
+    {
+      "name": "GenPrimaryClass",
+      "ordinal_decimal": 88
+    }
+  ],
+  "messages": [
+    {
+      "name": "MSG_META_EXPOSED",
+      "value": 73,
+      "evidence": "Native process drawing handlers"
+    },
+    {
+      "name": "MSG_META_CONTENT_VIEW_WIN_OPENED",
+      "value": 86,
+      "evidence": "Native process view lifecycle handlers"
+    },
+    {
+      "name": "MSG_META_CONTENT_VIEW_WIN_CLOSED",
+      "value": 87,
+      "evidence": "Native process view lifecycle handlers"
+    },
+    {
+      "name": "MSG_META_KBD_CHAR",
+      "value": 123,
+      "evidence": "UI FlowClass dispatch; native process tables"
+    },
+    {
+      "name": "MSG_META_START_SELECT",
+      "value": 195,
+      "evidence": "UI FlowClass button mapping"
+    },
+    {
+      "name": "MSG_META_END_SELECT",
+      "value": 196,
+      "evidence": "UI FlowClass paired button mapping"
+    },
+    {
+      "name": "MSG_GEN_PROCESS_OPEN_APPLICATION",
+      "value": 2561,
+      "evidence": "Native application process method table"
+    },
+    {
+      "name": "MSG_GEN_PROCESS_CLOSE_APPLICATION",
+      "value": 2563,
+      "evidence": "Native application process method table"
+    }
+  ],
+  "excluded_inferred_messages": [
+    "MSG_META_DRAG_SELECT: reference explicitly labels inferred; omitted from include constants."
+  ],
+  "calling_convention": "Native register ABI; ordinal constants do not create C-callable functions. Use independently authored assembly bridges preserving the specific message contract."
+}

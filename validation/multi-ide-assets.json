@@ -1,0 +1,16 @@
+{
+   "date" : "2026-11-14",
+   "graphical_ide_installation_tested" : false,
+   "kde_xml_structural_checks" : true,
+   "limits" : [
+      "Structural and protocol checks do not establish graphical rendering in every IDE",
+      "Full historical API and general GOC/UIC compilation remain outside this SDK subset"
+   ],
+   "passed" : true,
+   "perl_launchers_and_configs_checked" : true,
+   "schema" : "pcgeos1-multi-ide-assets-validation-v2",
+   "sdk" : "0.2.0",
+   "tests" : "tests/editor/test_editor.t",
+   "textmate_grammar_count" : 5,
+   "windows_cmd_launcher_executed" : false
+}

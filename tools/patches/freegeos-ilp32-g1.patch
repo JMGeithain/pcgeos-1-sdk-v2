@@ -1,0 +1,141 @@
+--- a/Tools/glue/library.c
++++ b/Tools/glue/library.c
+@@ -1677,11 +1677,16 @@
+      * the library as the kernel -- everything else should follow our lead */
+ 
+     if (strcmp(name, "geos") == 0 && hdr->proto.major <= 622) {
+-	sprintf(file, "kernel protocol is too low (%d.%d) -- we don't do 1.x links anymore\n",
+-		hdr->proto.major, hdr->proto.minor);
+-	yyerror(file);
+-	VMClose(fh);
+-	return (LLV_FAILURE);
++        if (geosRelease == 1) {
++            /* geos1-sdk: restore the existing v1 kernel relocation path. */
++            libs[numLibs].lnum = IS_KERNEL;
++        } else {
++            sprintf(file, "1.x kernel protocol %d.%d requires -G 1\n",
++                    hdr->proto.major, hdr->proto.minor);
++            yyerror(file);
++            VMClose(fh);
++            return LLV_FAILURE;
++        }
+     } else if (loadType == LLT_ON_STARTUP) {
+ 	libs[numLibs].lnum = numImport++;
+     } else if (loadType == LLT_DYNAMIC) {
+--- a/Tools/glue/main.c
++++ b/Tools/glue/main.c
+@@ -2201,20 +2201,12 @@
+ 	fileOps = outTypes[0].ops;
+     }
+ 
+-#if defined _WIN32
+-    serialNumber = (word) (GetTickCount() / 100);
+-#else
++/* geos1-sdk host portability: deterministic serial when requested. */
+     {
+-	struct timespec ts;
+-	if(clock_gettime(CLOCK_MONOTONIC, &ts) != 0) {
+-	    serialNumber = time(0);
+-        }
+-	else {
+-	    serialNumber = 
+-		    (ts.tv_nsec/10000 + ts.tv_sec*1000);
+-	}
+-    }
+-#endif /* defined _WIN32 */
++        const char *epoch = getenv("SOURCE_DATE_EPOCH");
++        serialNumber = (word)(epoch ? strtoul(epoch, (char **)0, 10) : time(0));
++    }
++
+ 
+     /*
+      * Figure the name of the output file.
+--- a/Tools/utils/printf.c
++++ b/Tools/utils/printf.c
+@@ -62,6 +62,11 @@
+ 
+ #include <st.h>
+ #include <putc.h>
++/* geos1-sdk host portability: never inspect a compiler CRT's FILE internals. */
++#if defined(__WATCOMC__)
++# undef putc
++# define putc(c, stream) fputc((c), (stream))
++#endif
+ VMHandle	idfile;	    /* File containing strings to be printed by the
+ 			     * %i formatting command.  Caller should set
+ 			     * by calling UtilSetIDFile.
+--- a/Tools/include/compat/string.h
++++ b/Tools/include/compat/string.h
+@@ -33,6 +33,14 @@
+ #include <strings.h>
+ #elif defined(_MSDOS) || defined(_WIN32) || defined(_LINUX)
+ #include <string.h>
++#if defined(_LINUX) && defined(__WATCOMC__)
++/* geos1-sdk: BSD declarations include compiler register-call pragmas. */
++#include <strings.h>
++/* geos1-sdk: avoid implicit/intrinsic-only BSD library veneers. */
++#define bzero(dst, count) memset((dst), 0, (count))
++#define bcopy(src, dst, count) memmove((dst), (src), (count))
++#define bcmp(a, b, count) memcmp((a), (b), (count))
++#endif
+ #else
+ #error Your compiler/OS is not yet supported
+ #endif
+--- a/Tools/include/config.h
++++ b/Tools/include/config.h
+@@ -394,4 +394,9 @@
+ #define sleep(t)  _sleep(t*1000)
+ #endif
+ 
++/* geos1-sdk host portability: old utility files call BSD routines implicitly. */
++#if defined(_LINUX) && defined(__WATCOMC__)
++#include <compat/string.h>
++#endif
++
+ #endif /* _CONFIG_H_ */
+--- a/Tools/glue/msobj.c
++++ b/Tools/glue/msobj.c
+@@ -90,6 +90,11 @@
+ {
+     if (rectype == MO_COMENT) {
+ 	if (data[1] == CC_MSOFT_EXT) {
++            /* geos1-sdk: Watcom emits a bare A1 marker without debug data.
++             * MSObj_ReadRecord excludes the checksum from reclen. */
++            if (reclen == 2) {
++                return(TRUE);
++            }
+ 	    /*
+ 	     * Comment indicates microsoft extensions are being used.
+ 	     * See if that includes codeview. The letters CV seem to
+@@ -106,6 +111,9 @@
+ 			msobjFinish = CV32_Finish;
+ 			return (CV32_Check(file, rectype, reclen, data, pass));
+ 		}
++	} else if ((data[1] == BCC_DEPENDENCY) && (reclen == 2)) {
++            /* geos1-sdk: bare Watcom end-dependency marker is not Borland debug. */
++            return(TRUE);
+ 	} else if ((data[1] == BCC_DEPENDENCY) ||
+ 		   (data[1] == BCC_VERSION))
+ 	{
+--- a/Tools/glue/parse.c
++++ b/Tools/glue/parse.c
+@@ -1051,6 +1051,8 @@
+ 		    } else {
+ 			cp2 = geoHeader.v1x.execHeader.geosFileHeader.core.longName;
+ 		    }
++                    /* geos1-sdk: clear all padding after the native long name. */
++                    memset(cp2, 0, GFH_LONGNAME_BUFFER_SIZE);
+ 		    if (lName > GFH_LONGNAME_SIZE) {
+ 			yyerror("longname TOO long (32 chars max)");
+ 			break;
+--- a/Tools/glue/parse.y
++++ b/Tools/glue/parse.y
+@@ -290,6 +290,8 @@
+ 		    } else {
+ 			cp2 = geoHeader.v1x.execHeader.geosFileHeader.core.longName;
+ 		    }
++                    /* geos1-sdk: clear all padding after the native long name. */
++                    memset(cp2, 0, GFH_LONGNAME_BUFFER_SIZE);
+ 		    if (lName > GFH_LONGNAME_SIZE) {
+ 			yyerror("longname TOO long (32 chars max)");
+ 			break;

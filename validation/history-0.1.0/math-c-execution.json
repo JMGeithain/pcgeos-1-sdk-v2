@@ -1,0 +1,39 @@
+{
+  "schema": "pcgeos1-emitted-c-geode-v1",
+  "kind": "c",
+  "input": "build/g1mathc/g1mathc.unbound.geo",
+  "input_sha256": "a8a0e8a3a7a78176987ef24bdf840badb24f7b701dbcdc4e44cfc2d0c4091581",
+  "input_bytes": 370,
+  "passed": true,
+  "unicorn_version": "2.1.4",
+  "mode": "x86 16-bit",
+  "checksum_cases": 67096,
+  "saturating_add_cases": 0,
+  "total_cases": 67096,
+  "geode_format_valid": true,
+  "c_code_bytes": 27,
+  "c_code_hex": "5589e58b4606b10589c2d3e2b10bd3e809c28b460830e431d05dcb",
+  "bridge_code_bytes": 0,
+  "fixed_resource_test_relocation": null,
+  "source_sha256": {
+    "checksum.c": "68962f0c65472fca900d1c49d5763fe1cd5204fc68129a6585e80bf8176fed25",
+    "math.gp": "76b917bd66bb482b0e2d5eab557957313f6fa75b5e77d2fa83af4468e245138a"
+  },
+  "checks": [
+    "Actual linked export/resource bytes",
+    "Whitelisted example instructions are available on 8086",
+    "All 65536 checksum state words and byte boundaries",
+    "Far return, stack balance and calling-convention preservation",
+    "SS differs from DS",
+    "Bounded stack writes"
+  ],
+  "native_loader_tested": false,
+  "geos_runtime_tested": false,
+  "limitations": [
+    "Unicorn executes code outside DOS/GEOS",
+    "Internal fixed-resource relocation is applied by a narrow test fixture",
+    "No native resource manager, library acquisition or kernel protocol test",
+    "No physical 8086/8088 or cycle-accurate timing test",
+    "Opcode whitelist covers these examples, not arbitrary C programs"
+  ]
+}

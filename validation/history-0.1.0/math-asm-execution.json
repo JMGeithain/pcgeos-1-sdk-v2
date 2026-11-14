@@ -1,0 +1,23 @@
+{
+  "schema": "pcgeos1-math-asm-emitted-code-v1",
+  "input": "build/g1math/g1math.unbound.geo",
+  "input_sha256": "c9640f2e8ddc615e7219cfa63451f3e9b0c63e57aa5c23620396202f759ab231",
+  "input_bytes": 354,
+  "unicorn_version": "2.1.4",
+  "mode": "x86 16-bit",
+  "passed": true,
+  "entry_cases": 24,
+  "add_cases": 1064,
+  "total_cases": 1088,
+  "code_hex": "f8cb03c3cb",
+  "geode_format_valid": true,
+  "example_opcodes_8086_whitelisted": true,
+  "native_loader_tested": false,
+  "geos_runtime_tested": false,
+  "source_sha256": "1b808870b96d12d1aaa231b456f8efd76a990ed0fc656ef02fc5e92883eb92dc",
+  "limitations": [
+    "Unicorn executes the emitted instructions, not DOS/GEOS",
+    "No native loader, library acquisition, protocol or UI test",
+    "The opcode whitelist applies only to this tiny example"
+  ]
+}

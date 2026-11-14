@@ -1,0 +1,31 @@
+use strict; use warnings; use Test::More; use FindBin; use lib "$FindBin::Bin/../../tools/lib",$FindBin::Bin;
+use Fixture; use File::Temp qw(tempdir); use Digest::SHA qw(sha256_hex); use JSON::PP;
+use PCGEOS::Geos1::Format qw(from_bytes parse_file); use PCGEOS::Geos1::Profile qw(build_profile check_imports); use PCGEOS::Geos1::Binding qw(bind_kernel_protocol); use PCGEOS::Geos1::Target qw(verify_target);
+my $dir=tempdir(CLEANUP=>1); my $a=writebytes("$dir/UI.GEO",fixture(name=>'ui',protocol=>[693,2]));
+my $p=build_profile([$a]); is($p->{status},'observed-not-runtime-certified','profile evidence limits'); ok(!$p->{kernel_executable_parsed},'DOS kernel unparsed'); ok(!$p->{api_signatures_verified},'API not inferred');
+is($p->{modules}[0]{name},'ui','module name'); ok(!defined($p->{modules}[0]{exports}[0]{symbol_name}),'no invented signature');
+my $alias=writebytes("$dir/ALIAS.GEO",readbytes($a)); dies_like(sub{build_profile([$a,$alias])},qr/Duplicate permanent/,'duplicate module');
+my $bad=writebytes("$dir/BAD.GEO",'bad'); my $partial=build_profile([$a,$bad],keep_going=>1); ok(!$partial->{complete_for_supplied_paths},'partial profile marked'); is(scalar @{$partial->{modules}},1,'partial valid count'); is(scalar @{$partial->{rejected_files}},1,'rejection recorded');
+my $g=from_bytes(fixture(imports=>[['ui',[693,1]]])); my $r=check_imports($g,$p); ok($r->{module_protocols_match},'minor requirement satisfied'); ok(!$r->{abi_certified},'not ABI certification'); ok(!$r->{kernel_protocol_checked},'kernel not checked');
+for my $protocol([694,0],[693,3]){ok(!check_imports(from_bytes(fixture(imports=>[['ui',$protocol]])),$p)->{module_protocols_match},'incompatible major/minor');}
+ok(!check_imports($g,build_profile([]))->{module_protocols_match},'missing module mismatch');
+my @malformed=(undef,[],{}, {schema=>'pcgeos1-observed-runtime-profile-v1',modules=>undef},{schema=>'pcgeos1-observed-runtime-profile-v1',modules=>[undef]});
+for my $v(undef,[1],[1,JSON::PP::true],[-1,0],[65536,0],'693.0'){push @malformed,{schema=>'pcgeos1-observed-runtime-profile-v1',modules=>[{name=>'ui',sha256=>'a'x64,protocol=>$v}]};}
+push @malformed,{schema=>'pcgeos1-observed-runtime-profile-v1',modules=>[{name=>'ui',sha256=>'bad',protocol=>[693,0]}]};
+for my $i(0..$#malformed){dies_like(sub{check_imports($g,$malformed[$i])},qr/./,"malformed profile $i");}
+my $source=fixture(); substr($source,0xcc,4)=pack('v2',0,0); my $src=writebytes("$dir/unbound.geo",$source); my $ref=writebytes("$dir/ref.geo",fixture(name=>'original')); my $out="$dir/bound.geo";
+$r=bind_kernel_protocol($src,$ref,$out); my $bound=readbytes($out); is(readbytes($src),$source,'binding source preserved'); is(substr($bound,0,0xcc),substr($source,0,0xcc),'prefix unchanged'); is(substr($bound,0xd0),substr($source,0xd0),'suffix unchanged'); is_deeply(parse_file($out)->{kernel_protocol},[600,0],'observed protocol bound'); ok(!$r->{runtime_tested},'binding not runtime test'); ok(!$r->{reference_authenticity_verified},'authenticity not inferred');
+writebytes($src,fixture()); $r=bind_kernel_protocol($src,$ref,$out); ok($r->{idempotent_copy},'idempotent binding'); is_deeply($r->{changed_offsets},[],'idempotent zero changes');
+my $wrong=fixture(); substr($wrong,0xcc,4)=pack('v2',601,0); writebytes($src,$wrong); dies_like(sub{bind_kernel_protocol($src,$ref,$out)},qr/different kernel/,'nonzero protocol replacement refused');
+for my $pair([0,0],[0,1]){my $raw=fixture();substr($raw,0xcc,4)=pack('v2',@$pair);writebytes($ref,$raw);writebytes($src,$source);dies_like(sub{bind_kernel_protocol($src,$ref,$out)},qr/nonzero/,'zero-major reference rejected');} writebytes($ref,fixture());
+for my $input(fixture(imports=>[['ui',[693,0]]]),fixture(code=>"\x9a\x34\x01\0\0\xcb",relocations=>[[0,0,1]])) {substr($input,0xcc,4)=pack('v2',0,0);writebytes($src,$input);dies_like(sub{bind_kernel_protocol($src,$ref,$out)},qr/imported libraries|API relocations/,'binding API use rejected');}
+my $internal=fixture(code=>"\x90\x01\0\xcb",relocations=>[[0x22,0,1]]); substr($internal,0xcc,4)=pack('v2',0,0);writebytes($src,$internal);bind_kernel_protocol($src,$ref,$out);is(parse_file($out)->{resources}[2]{data},parse_file($src)->{resources}[2]{data},'internal relocation preserved');
+for my $pair([1,0x8000],[3,0x2000],[2,0],[2,0xc000],[2,0x6000],[2,0x4200]){my $raw=$source; putword($raw,$_, $pair->[0]) for(0xca,0xe4);putword($raw,$_, $pair->[1]) for(0xc8,0xe2);writebytes($src,$raw);dies_like(sub{bind_kernel_protocol($src,$ref,$out)},qr/./,'binding wrong module role');}
+writebytes($src,$source); for my $path($src,$ref){dies_like(sub{bind_kernel_protocol($src,$ref,$path)},qr/overwrite/,'input overwrite refused');}
+SKIP:{skip 'hardlinks unavailable',2 unless link($src,"$dir/hard.geo"); dies_like(sub{bind_kernel_protocol($src,$ref,"$dir/hard.geo")},qr/overwrite/,'hardlink protected');}
+my $kernel='SYNTHETIC-IDENTITY-ONLY';my $k=writebytes("$dir/KERNEL.EXE",$kernel);my $target={target_identity_schema=>'pcgeos1-pinned-target-v1',target_id=>'synthetic-identity-fixture',required_files=>[{path=>'KERNEL.EXE',sha256=>sha256_hex($kernel),native_geode=>JSON::PP::false}]};
+$r=verify_target($dir,$target);ok($r->{files_match},'target exact identity');ok(!$r->{runtime_tested},'identity not runtime test');ok(!$r->{api_certified},'identity not API test');writebytes($k,'CHANGED');ok(!verify_target($dir,$target)->{files_match},'changed identity fails');unlink $k; $r=verify_target($dir,$target);ok(!$r->{files_match},'missing file fails');ok(exists $r->{files}[0]{error},'missing error recorded');writebytes($k,$kernel);
+for my $path('../KERNEL.EXE','/KERNEL.EXE','a//b','a/./b','C:/KERNEL.EXE','a\\b'){my $copy={%$target,required_files=>[{%{$target->{required_files}[0]},path=>$path}]};dies_like(sub{verify_target($dir,$copy)},qr/./,'unsafe target path');}
+for my $bad({%$target,required_files=>[]},{%$target,target_identity_schema=>'wrong'},{%$target,required_files=>[$target->{required_files}[0],$target->{required_files}[0]]},{%$target,required_files=>[{%{$target->{required_files}[0]},sha256=>'not-hash'}]}){dies_like(sub{verify_target($dir,$bad)},qr/./,'malformed target');}
+$target->{required_files}[0]{native_geode}=JSON::PP::true;ok(!verify_target($dir,$target)->{files_match},'DOS executable is no native geode');
+done_testing;
