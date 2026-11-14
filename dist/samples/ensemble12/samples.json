@@ -1,0 +1,42 @@
+{
+  "schema": "pcgeos1-original-prebuilt-samples-v1",
+  "target_id": "supplied-ensemble12-622.3-ui693.0",
+  "kernel_requirement": [
+    622,
+    3
+  ],
+  "files": [
+    {
+      "file": "WORLD/G1HELLO.GEO",
+      "bytes": 1668,
+      "sha256": "5be45e9c4cb9991e84496a3c4994080b7e2cb974012948de6b2660534ebe3d8d",
+      "source_project": "examples/hello-asm"
+    },
+    {
+      "file": "WORLD/G1PROBE.GEO",
+      "bytes": 1938,
+      "sha256": "754224f270310325738b74e538a621cca6cbcc09b69b105e6e6d57f4c4dbb828",
+      "source_project": "examples/hello-libraries"
+    },
+    {
+      "file": "SYSTEM/G1MATH.GEO",
+      "bytes": 354,
+      "sha256": "412f1bdd923f5889f051fe7e31df88007b366a02fc41ec87fc75a67fa0dbc302",
+      "source_project": "examples/math-asm"
+    },
+    {
+      "file": "SYSTEM/G1MATHC.GEO",
+      "bytes": 370,
+      "sha256": "ccc9fd0eaf4bb064d6fbb70ec6a5e5e7dfa12ec791c58286a76157ab7b2bb690",
+      "source_project": "examples/math-c"
+    },
+    {
+      "file": "SYSTEM/G1MIXED.GEO",
+      "bytes": 436,
+      "sha256": "ae54fc5fafd859d4e996375a48d9dbbe8457bbff7b09d48a73458df22eb19e11",
+      "source_project": "examples/math-mixed"
+    }
+  ],
+  "original_code_only": true,
+  "runtime_included": false
+}
