@@ -48,3 +48,8 @@ Die öffentlich gepflegte FreeGEOS-Quellbasis beruht auf einer späteren Produkt
 
 Die in diesem Repository dokumentierten Nachweise und Testberichte haben Vorrang vor allgemeinen Formulierungen wie „GEOS-kompatibel“. Nicht ausgeführte Windows-, macOS- oder Hardwaretests sind nicht durch einen erfolgreichen Linux-Test abgedeckt.
 
+
+
+## GEOTEST-Fallstudie
+
+Die [GEOTEST-Fallstudie](geotest-case-study.md) sammelt Ergebnisse zu Kernel-Dateideskriptoren, Dispatcheraufrufen, dem GTDF-v1-Testformat, Icons und dem noch offenen Menü-/Dateidialogpfad. Sie trennt statische Befunde, beobachtete Laufzeit und offene Hypothesen.

@@ -41,3 +41,8 @@ The buildable projects include assembly, C and mixed calculation libraries, plus
 The explanations are original developer guidance. Where a code fragment is labelled pseudocode or a portable C example, it is not a claim that the fragment can be linked into a native 1.x application unchanged. Commands must be used with the build paths actually enabled in this release. Unavailable prerequisites are reported as unavailable rather than replaced by guessed headers or imports.
 
 For exact supported commands, start with `perl sdk.pl --help` at the repository root. Read the root release notes and [compatibility page](compatibility.md) before publishing a program with a “PC/GEOS 1.x” or “8088” label.
+
+
+## GEOTEST case study
+
+The [GEOTEST case study](geotest-case-study.md) collects findings on kernel file descriptors, dispatcher calls, the GTDF v1 test format, icons, and the still-open menu/file-dialog path. It separates static evidence, observed runtime behavior, and unresolved hypotheses.
