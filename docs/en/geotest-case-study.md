@@ -18,6 +18,10 @@ The only kernel source examined was the German original `GEOWORKS/KERNEL.OLD` fr
 
 **Correction history:** Early reports 2513 and 2530 misassigned some bytes. The stack trace in 2532 is authoritative. Therefore neither `FD+0` nor `FD+3` should be called a universal DOS handle. What is established is the field source above and the internal processing of `FD+6`; the external dispatcher's semantics and any handle translation remain open.
 
+## Real documents as control samples
+
+A scan of the first 36 bytes of 426 `.000` files under `GEOWORKS/DOCUMENT` in the German archive found the shared signature `C7 45 CF 53`. Tokens at `0x14` and `0x1A` grouped in part as follows: `WDAT/WP00` (198 GeoWrite files), `DDAT/DP00` (154 GeoDraw files), `scbk/Scrp` (54 Scrapbook files), and `adbk/ADBK` (8 address-book files); 12 others used additional identifiers. This supports distinct type/creator identifiers, but does not explain the full VM layout or establish a general document generator.
+
 ## Custom document format GTDF v1
 
 GTDF is a flat, application-specific ASCII test format inside an observed GEOS file wrapper. It is not a GeoWrite, VM, or universal PC/GEOS document format.
@@ -45,7 +49,7 @@ All multibyte fields are little-endian. Total size is `80 + N` bytes. The parser
 
 ## Observed implementation steps
 
-- Earlier probe: the user saw `WRITTEN` after create/write/close and then `EXISTS` on a subsequent open; the existing file was not overwritten. This establishes the observed I/O path on that installation, not a general error-code or kernel API guarantee.
+- Earlier I/O probe: user screenshots showed `WRITTEN` after create/write/close and `EXISTS` on the following start; the test file remained 37 bytes and unchanged (SHA-256 `438C9D87125904F41399A603F3B7A6725BF8453ED6B610F4DA32E5982B4723B4`). This establishes those paths in the observed installation, not a general error-code or kernel API guarantee.
 - GTDF samples were opened under GeoWorks 1.x and displayed `EXACT` plus the read content. User screenshots confirmed, among others, the wrapping `GEOTEST DOCUMENT` / `PAYLOAD V1` (2540) and `GEOTEST DOKUMENT` / `2026` (2541). The user confirmed a GeoManager double-click opening GEOTEST 2537 for the test document.
 - The GTDF v1 sample `GTST2537.000` is 107 bytes, payload `GEOTEST document payload v1`, SHA-256 `15223E9079AC05FADB94620DCAC17A4FA2D53EC278D9FBDF7D53B8954DD64494`.
 - Source revision 2543 added a create-if-missing probe with read, validation, close, and read-back. Its recorded build report says `runtime_tested=false`; later user screenshots from other version states do not prove execution of this exact artifact. Therefore no runtime pass for 2543 itself should be claimed from the build report alone.
