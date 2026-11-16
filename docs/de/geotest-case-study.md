@@ -18,6 +18,10 @@ Untersuchte Quelle war ausschließlich `GEOWORKS/KERNEL.OLD` aus dem deutschen `
 
 **Korrekturhistorie:** Die ersten Fassungen 2513 und 2530 ordneten einzelne Bytes falsch zu. Maßgeblich ist die Stackverfolgung aus 2532. Daher weder `FD+0` noch `FD+3` als universellen DOS-Handle bezeichnen. Gesichert ist nur die oben angegebene Feldquelle und die interne Weiterverarbeitung von `FD+6`; die Semantik des externen Dispatchers und eine mögliche Handle-Übersetzung bleiben offen.
 
+## Reale Dokumente als Kontrollbeispiele
+
+Ein Scan der ersten 36 Bytes von 426 `.000`-Dateien in `GEOWORKS/DOCUMENT` aus dem deutschen Archiv fand die gemeinsame Signatur `C7 45 CF 53`. Die Tokens bei `0x14` und `0x1A` gruppierten sich unter anderem so: `WDAT/WP00` (198 GeoWrite-Dateien), `DDAT/DP00` (154 GeoDraw-Dateien), `scbk/Scrp` (54 Scrapbook-Dateien) und `adbk/ADBK` (8 Adressbuch-Dateien); 12 weitere verteilten sich auf andere Kennungen. Das stützt getrennte Typ-/Creator-Kennungen, erklärt aber weder den vollständigen VM-Aufbau noch einen allgemeinen Dokumentgenerator.
+
 ## Eigenes Dokumentformat GTDF v1
 
 GTDF ist ein flaches, anwendungseigenes ASCII-Testformat mit einer beobachteten GEOS-Dateihülle. Es ist kein GeoWrite-, VM- oder universelles PC/GEOS-Dokumentformat.
